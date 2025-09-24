@@ -1,0 +1,191 @@
+"ID","challenges_other","challenge_category","challenges_coded","TTRAM_validation"
+108,"-",,"-",
+92,"Protection of sensitive data through encryption, access controls, and compliance with regulations like GDPR.
+Storage of large data collections.","Storage & Integrity","High volume data","Storage & Integrity"
+92,"Protection of sensitive data through encryption, access controls, and compliance with regulations like GDPR.
+Storage of large data collections.","Security","Security","Security"
+50,"Dependence on external experts/developers","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+104,"Robustness and reliability","Technical Infrastructure","Infrastructure : robustness and reliability","Technical Infrastructure"
+62,"-",,"-",
+15,"Find perennial resources","Other","Funding","Resources"
+29,"fast evolution of internet standards in comparison to time/money for developpements","Tech Watch","Keeping up with new standards","Resources"
+1,"For existing holdings we have no challenges for sensitive data management. But for the wishlist of future developments incl. video and audio files I marked moderate challenges.","Tech Watch","Keeping up with new standards","Resources"
+119,"The repository lacks sufficient personnel resources to effectively monitor technological advancements or develop expertise in security and technical infrastructure. Additionally, the growing number of services that need to be maintained presents a challenge for the available staff. Disk space upgrades may be necessary if the repository successfully attracts a large number of dataset deposits.","Storage & Integrity","High volume data","Storage & Integrity"
+119,"The repository lacks sufficient personnel resources to effectively monitor technological advancements or develop expertise in security and technical infrastructure. Additionally, the growing number of services that need to be maintained presents a challenge for the available staff. Disk space upgrades may be necessary if the repository successfully attracts a large number of dataset deposits.","Other","Human resources : IT","People & Expertise"
+119,"The repository lacks sufficient personnel resources to effectively monitor technological advancements or develop expertise in security and technical infrastructure. Additionally, the growing number of services that need to be maintained presents a challenge for the available staff. Disk space upgrades may be necessary if the repository successfully attracts a large number of dataset deposits.","Tech Watch","Keeping up with new standards","Resources"
+138,"Only avoid the malware encryption of data (but we have backups of data)","Security","Security","Security"
+11,"-",,"-",
+31,"-",,"-",
+103,"Large scale storage costs","Other","Funding : large scale storage","Resources"
+66,"-",,"-",
+131,"-",,"-",
+60,"-",,"-",
+118," There are no resources for major software upgrades. Insufficient IT staff.","Other","Human resources : IT","People & Expertise"
+10,"-",,"-",
+106,"-",,"-",
+133,"There are no resources for major software apgrades. Insufficient IT staff.","Other","Funding","Resources"
+57,"-",,"-",
+107,"-",,"-",
+127,"We need more staff for a faster deployment of new features","Other","Human resources : development","People & Expertise"
+68,"-",,"-",
+14,"Technical challenges must be solved by our service provider, the GBV.","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+9,"-",,"-",
+25,"-",,"-",
+134,"There are no resources for major software upgrades. Insufficient IT staff. Sensitive data is not an issues, as it's not accepted in the repository.","Other","Human resources : IT","People & Expertise"
+159,"I'm not the right person to answer this question but I suppose the major challenges concern larger volumes of data.","Storage & Integrity","High volume data","Storage & Integrity"
+143,"Not my area of expertise but keeping up to date with technical developments I would say is a general challenge; Ensuring our system develops with the newest developments. As mentioned above dealing with sensitive data is a large wish from our community but not something we can currently offer so this is a large challenge for us I would say.","Tech Watch","Keeping up with new standards","Resources"
+67,"tech watch","Tech Watch","Collaborative tech watch","Research & development"
+136,"Most significant challenges: - Our repository service is ill equipped to manage datasets which exceed 10 GB per deposit. - Our repository service is not suitable for sensitive data which exceed a certain degree of confidentiality (e.g. personal data of a special nature)","Storage & Integrity","High volume data","Storage & Integrity"
+136,"Most significant challenges: - Our repository service is ill equipped to manage datasets which exceed 10 GB per deposit. - Our repository service is not suitable for sensitive data which exceed a certain degree of confidentiality (e.g. personal data of a special nature)","Sensitive data management","Sensitive data : repository not suitable for some types of sensitive data (personal data for ex.)","Legal & Ethical"
+132,"-",,"-",
+145,"-",,"-",
+46,"Long term availability of storage for large data sets, interfaces to tape libraries, dependencies on AAI services of the institution, maintenance and security","Storage & Integrity","Long term availability storage","Storage & Integrity"
+46,"Long term availability of storage for large data sets, interfaces to tape libraries, dependencies on AAI services of the institution, maintenance and security","Security","Security","Security"
+46,"Long term availability of storage for large data sets, interfaces to tape libraries, dependencies on AAI services of the institution, maintenance and security","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+91,"-",,"-",
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Tech Watch","Collaborative tech watch","Research & development"
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Technical Infrastructure","Integrating with large data management system(s)","Interoperability"
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Technical Infrastructure","More automated integrity check systems","Storage & Integrity"
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Technical Infrastructure","Non-commercial cloud services","Storage & Integrity"
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Sensitive data management","Staff training in data privacy","Training"
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Technical Infrastructure","Support for containerized deployment","Technical Infrastructure"
+20,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Other","Sustainability","Continuity of Service"
+101,"(I'm not sure what ""Tech Watch"" is). I think we've done a good job over time of integrating and interfacing our difference technological systems, but that is definitely one of the challenges--our tech stacks are mostly open source so that requires extra development and standardization/accessibility work.","Tech Watch","Evolutions of the repository to keep it current","Research & development"
+101,"(I'm not sure what ""Tech Watch"" is). I think we've done a good job over time of integrating and interfacing our difference technological systems, but that is definitely one of the challenges--our tech stacks are mostly open source so that requires extra development and standardization/accessibility work.","Other","Human resources : development","People & Expertise"
+153,"-",,"-",
+80,"-",,"-",
+102,"-",,"-",
+77,"Currently experiencing high volume requests events likely caused by bots and AI agents, which are impacting service delivery.","Security","Aggressive harvesting by AI companies","Security"
+152,"-",,"-",
+94,"-",,"-",
+79,"CapEx to maintain functionality; keeping the codebase up to date.","Other","Funding","Resources"
+79,"CapEx to maintain functionality; keeping the codebase up to date.","Tech Watch","Keeping up with new standards","Resources"
+122,"Defense against cyberattacks or bots.","Security","Security","Security"
+5,"Currently AI bots sending automated requests. Also understanding future requirements (tech watch). Sensitive data are handled in another solution, so the main challenge there is ensuring they don't get deposited unwittingly.","Security","Aggressive harvesting by AI companies","Security"
+5,"Currently AI bots sending automated requests. Also understanding future requirements (tech watch). Sensitive data are handled in another solution, so the main challenge there is ensuring they don't get deposited unwittingly.","Tech Watch","Keeping up with new standards","Resources"
+5,"Currently AI bots sending automated requests. Also understanding future requirements (tech watch). Sensitive data are handled in another solution, so the main challenge there is ensuring they don't get deposited unwittingly.","Sensitive data management","Sensitive data : making sure no sensitive data is uploaded","Legal & Ethical"
+93,"we have sensitive data so security os always a priority, but we have it very much sorted","Security","Security","Security"
+135,"-",,"-",
+39,"-",,"-",
+111,"-",,"-",
+105,"A performant solution for archiving petabytes of data","Storage & Integrity","High volume data","Storage & Integrity"
+35,"Massive increase in harvesting, likely by LLM bots","Security","Aggressive harvesting by AI companies","Security"
+112,"-",,"-",
+144,"-",,"-",
+61,"-",,"-",
+109,"-",,"-",
+116,"-",,"-",
+40,"Processes for submitting sensitive data to digital preservation are not well defined in research organizations, who own the data.","Storage & Integrity","Long term preservation","Preservation"
+96,"-",,"-",
+121,"There are no resources for major software upgrades. Insufficient IT staff.","Other","Human resources : IT","People & Expertise"
+75,"-",,"-",
+120,"There are no resources for major software upgrades. Insufficient IT staff.","Other","Funding","Resources"
+32,"-",,"-",
+95,"-",,"-",
+51,"Current international situation challenges the Aarhus Convention principle of free access to environmental data.","Other","Global current situation","Legal & Ethical"
+83,"Our IT department keeps up to date with all security-related issues. The effort behind this is considerable given the increasingly complex environments that archives and research communities are embedded in. So while I would say that we are not facing challenges in the sense of ""risk of breaches"", the resources/effort needed to keep our systems secure are not minimal.","Other","Human resources : IT","People & Expertise"
+83,"Our IT department keeps up to date with all security-related issues. The effort behind this is considerable given the increasingly complex environments that archives and research communities are embedded in. So while I would say that we are not facing challenges in the sense of ""risk of breaches"", the resources/effort needed to keep our systems secure are not minimal.","Security","Security","Security"
+55,"-",,"-",
+63,"making sure coordinates are not published, different parts of datasets have different access rights","Sensitive data management","Sensitive data : making sure coordinates are not published","Legal & Ethical"
+130,"There are no resources for major software upgrades. Insufficient IT staff. Sensitive data is not an issues, as it's not accepted in the repository.","Other","Human resources : IT","People & Expertise"
+123,"-",,"-",
+110,"Data security is a challenge in all aspects of the digital world, in this context a repository such as infoIGME is not beyond risk. The evolution of AI means that some taken-for-granted approaches such as the need for metadata or the assignment of subject matter or keywords to existing records in institutional repositories such as infoIGME are being called into question and are a technical challenge for them.","Security","Metadata","Security"
+110,"Data security is a challenge in all aspects of the digital world, in this context a repository such as infoIGME is not beyond risk. The evolution of AI means that some taken-for-granted approaches such as the need for metadata or the assignment of subject matter or keywords to existing records in institutional repositories such as infoIGME are being called into question and are a technical challenge for them.","Security","Security","Security"
+7,"Migrating our current repository website to a new system.","Tech Watch","Evolutions of the repository to keep it current","Research & development"
+155,"We will need latest high speed servers","Technical Infrastructure","Infrastructure : high-performance servers","Technical Infrastructure"
+3,"The lack of IT specialists in the field of library and information sciences in Serbia has a long-term impact on the operation of digital repositories in the country, and therefore also affects the IES repository.","Other","Human resources : IT","People & Expertise"
+149,"These are being ensured based on Service Level Agreements ( https://www.isric.org/overview-service-level-agreements ).","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+69,"-",,"-",
+128,"Coordination between the different departments involved in safeguarding sensitive data. This leads to overcaution from time to time.","Other","Coordination between teams","People & Expertise"
+128,"Coordination between the different departments involved in safeguarding sensitive data. This leads to overcaution from time to time.","Sensitive data management","Sensitive data : avoir overcaution","Legal & Ethical"
+114,"-",,"-",
+27,"Keeping on top of new developments","Tech Watch","Keeping up with new standards","Resources"
+89,"-",,"-",
+12,"-",,"-",
+76,"-",,"-",
+137,"Costs for a high-quality virtualized server and storage infrastructure - shortage of skilled workers","Technical Infrastructure","Infrastructure : high costs","Resources"
+53,"-",,"-",
+47,"The infrastructure needs to be continuously developed to avoid technical debt and incorporate new functionality","Tech Watch","Evolutions of the repository to keep it current","Research & development"
+34,"-",,"-",
+13,"The MorpheusML model repository is based on git, the repository software is open source, currently all is hosted on GitLab.",,"-",
+99,"AAI, Security","Security","Security","Security"
+21,"No issues regarding security. The size of the data and the computational resources required for processing impose demands on the technical infrastructure and storage required.","Storage & Integrity","High volume data","Storage & Integrity"
+17,"-",,"-",
+16,"-",,"-",
+157,"Maintaining compliance certifications.","Other","Maintaining compliance certifications.","Curation, Quality & Compliance"
+56,"-",,"-",
+140,"1. Lack of resources for technical infrastructure update. 2. Repository is based on custom-built software, which means that maintenance and updates also need custom solutions and there is no community support to count on. The maintenance of the software is outsourced to a private company and implemented through procurement contracts, which makes bug fixes or system improvements slower and more difficult to negotiate.","Other","Funding","Resources"
+140,"1. Lack of resources for technical infrastructure update. 2. Repository is based on custom-built software, which means that maintenance and updates also need custom solutions and there is no community support to count on. The maintenance of the software is outsourced to a private company and implemented through procurement contracts, which makes bug fixes or system improvements slower and more difficult to negotiate.","Other","Human resources : development","People & Expertise"
+140,"1. Lack of resources for technical infrastructure update. 2. Repository is based on custom-built software, which means that maintenance and updates also need custom solutions and there is no community support to count on. The maintenance of the software is outsourced to a private company and implemented through procurement contracts, which makes bug fixes or system improvements slower and more difficult to negotiate.","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+23,"-",,"-",
+141,"-",,"-",
+154,"Significant cybersecurity threats","Security","Security","Security"
+24,"-",,"-",
+148,"Large datasets, and we have limited options to restrict access to sensitive data.","Storage & Integrity","High volume data","Storage & Integrity"
+148,"Large datasets, and we have limited options to restrict access to sensitive data.","Sensitive data management","Sensitive data: restrict access","Legal & Ethical"
+74,"-",,"-",
+48,"To ensure storage security and redundancy to avoid data loss","Storage & Integrity","Data integrity","Storage & Integrity"
+150,"-",,"-",
+71,"-",,"-",
+58,"-",,"-",
+124,"-",,"-",
+49,"-",,"-",
+52,"To be able to continuously evolve the infrastructure (technical debt). Sensitive data management is starting to become a challenge for proteomics data as well","Tech Watch","Evolutions of the repository to keep it current","Research & development"
+52,"To be able to continuously evolve the infrastructure (technical debt). Sensitive data management is starting to become a challenge for proteomics data as well","Sensitive data management","Sensitive data : also starting for proteomics","Legal & Ethical"
+87,"-",,"-",
+100,"-",,"-",
+156,"Our technical infrastructure was built on iRODS and is not compliant with preservation requirements, so we have to change the infrastructure which is time consuming. A tech watch is really hard since we have no one to do it. Security requirement are unclear within our organisation (a University) so it is hard to comply with them. Even if the repository is quite secure.","Tech Watch","Collaborative tech watch","Research & development"
+156,"Our technical infrastructure was built on iRODS and is not compliant with preservation requirements, so we have to change the infrastructure which is time consuming. A tech watch is really hard since we have no one to do it. Security requirement are unclear within our organisation (a University) so it is hard to comply with them. Even if the repository is quite secure.","Technical Infrastructure","Infrastructure : preservation compliance","Preservation"
+156,"Our technical infrastructure was built on iRODS and is not compliant with preservation requirements, so we have to change the infrastructure which is time consuming. A tech watch is really hard since we have no one to do it. Security requirement are unclear within our organisation (a University) so it is hard to comply with them. Even if the repository is quite secure.","Security","Security","Security"
+113,"There are no resources for major software upgrades. Insufficient IT staff.","Other","Human resources : IT","People & Expertise"
+6,"-",,"-",
+142,"– Data storage and backup – Updates to the core software take a lot of time – Maintenance of all related softwares and tools","Storage & Integrity","Data integrity","Storage & Integrity"
+142,"– Data storage and backup – Updates to the core software take a lot of time – Maintenance of all related softwares and tools","Tech Watch","Evolutions of the repository to keep it current","Research & Development"
+37,"There are no resources for major software upgrades. Insufficient IT staff. Sensitive data is not an issues, as it's not accepted in the repository.","Other","Funding","Resources"
+22,"-",,"-",
+126,"There are no resources for major software upgrades. Insufficient IT staff.","Other","Funding","Resources"
+28,"-",,"-",
+33,"-",,"-",
+72,"We outsource technology and security to platform provider","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+97,"Ther are no resources for major software apgrades. Insufficient IT staff.","Other","Human resources : IT","People & Expertise"
+38,"There are no resources for major software upgrades. Insufficient IT staff.","Other","Human resources : IT","People & Expertise"
+42,"no challenge","Other","No challenges","No challenge"
+125,"There are no resources for major software upgrades. Insufficient IT staff.","Other","Funding","Resources"
+129,"There are no resources for major software upgrades. Insufficient IT staff. Sensitive data is not an issues, as it's not accepted in the repository.","Other","Funding","Resources"
+88,"-",,"-",
+41,"-",,"-",
+36,"-",,"-",
+8,"-",,"-",
+151,"-",,"-",
+158,"-",,"-",
+70,"Maintaining and improving IT infrastructure entails high human resource costs. Furthermore, learning new technologies is important, and often under-resourced, as current IT infrastructure can easily become obsolete due to the rapid evolution of IT.","Other","Human resources : IT","People & Expertise"
+70,"Maintaining and improving IT infrastructure entails high human resource costs. Furthermore, learning new technologies is important, and often under-resourced, as current IT infrastructure can easily become obsolete due to the rapid evolution of IT.","Technical Infrastructure","Infrastructure : high costs","Resources"
+70,"Maintaining and improving IT infrastructure entails high human resource costs. Furthermore, learning new technologies is important, and often under-resourced, as current IT infrastructure can easily become obsolete due to the rapid evolution of IT.","Tech Watch","Keeping up with new standards","Resources"
+64,"-",,"-",
+59,"Most dealt with as part of German Federal Government security governance","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+30,"-",,"-",
+84,"-",,"-",
+115,"-",,"-",
+78,"-",,"-",
+86,"There are no resources for major software upgrades. Insufficient of IT staff.","Other","Human resources : IT","People & Expertise"
+85,"-",,"-",
+2,"the Geo-political situation; sufficient funding","Other","Funding","Resources"
+98,"at times difficult communication / different priorities between institution IT and digital preservation / repository staff","Other","Coordination between teams","External Engagement"
+19,"STORAGE & INTEGRITY Could profit from: 1) Integration with large data managing system(s), e.g., Globus; 2) More automated integrity checking system. TECHNICAL INFRASTRUCTURE Could profit from: 1) More robust containerized deployment in non-commercial cloud services, in collaboration with other Dataverse installations; 2) More long-term sustainability commitment to community-driven open infrastructure used by our and many other research repositories. TECH WATCH Could profit from more coordinated collaborative approaches to tech watch for aspects relevant to TDRs. SENSITIVE DATA MANAGEMENT Could profit from: 1) Global, operationalizable data privacy classification framework for research data, that can be adapted at national and institutional levels; 2) By-design implementation of the framework mentioned in (1) in the repository software and integrated tools and services; 3) National data privacy training program targeted at repository support staff. SECURITY Could profit from more coordinated community-driven approaches to security management of aspects relevant to TDRs.","Security","Community-driven approches to security management in TDRs","Security"
+44,"-",,"-",
+54,"We have sufficient process and supporting evidence for all of the above that are related to CoreTrustSeal. But for these and others there is a lack of community consensus on the minimum necessary practice and supporting guidance/templates for good practice","Tech Watch","Lack of community standards","Research & development"
+54,"We have sufficient process and supporting evidence for all of the above that are related to CoreTrustSeal. But for these and others there is a lack of community consensus on the minimum necessary practice and supporting guidance/templates for good practice","Other","Recognized guidelines and standards for preservation","Preservation"
+4,"-",,"-",
+26,"-",,"-",
+90,"We do not allow archiving of sensitive data in our Institutional repository, we also adhere to Open Science principles, so data archived is free to use for external actors.","Other","No challenge","No challenge"
+65,"Increase our storage capacity","Storage & Integrity","High volume data","Storage & Integrity"
+73,"-",,"-",
+81,"-",,"-",
+82,"-",,"-",
+117,"There are no resources for major software upgrades. Insufficient of IT staff.","Other","Funding","Resources"
+139,"We are dependent on the possibilities offered by the IT service of the host organisation.","Storage & Integrity","Third party dependencies","Third Party Dependencies"
+147,"-",,"-",
+146,"-",,"-",
+45,"-",,"-",
+137,"Costs for a high-quality virtualized server and storage infrastructure - shortage of skilled workers","Other","Human resources : IT","People & Expertise"
+21,"No issues regarding security. The size of the data and the computational resources required for processing impose demands on the technical infrastructure and storage required.","Technical Infrastructure","Infrastructure : computational resources","Technical Infrastructure"

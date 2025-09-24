@@ -1,0 +1,1341 @@
+"ID","challenges_other","challenges_coded","TTRAM_validation","TTRAM_other"
+92,"Integration of tools used for active research data with our repository service for data and software.
+Support for reproducibility of data and software, also in relation to Machine Learning (ML) and Artificial Intelligence (AI).","Tool integration with the repository for data and software","Other","Interoperability"
+92,"Integration of tools used for active research data with our repository service for data and software.
+Support for reproducibility of data and software, also in relation to Machine Learning (ML) and Artificial Intelligence (AI).","Support for reproducibility of data and software, also in relation to Machine Learning (ML) and Artificial Intelligence (AI).","Other","Interoperability"
+50,"Lack of personnel. Technical/expert staff as well. Dependent on external developers.","Human resources : with expertise","People & Expertise",
+50,"Lack of personnel. Technical/expert staff as well. Dependent on external developers.","Human resources : development","People & Expertise",
+104,,"-",,
+62,,"-",,
+15,"multiple other solutions at different scales","Multiple other solutions","Mission & Scope",
+29,"Trouver des ressources pérennes... ","Funding","Resources",
+1,"Resources for IT development and product development, permanent resources for Data Stewards and Communication","Human resources : development","People & Expertise",
+1,"Resources for IT development and product development, permanent resources for Data Stewards and Communication","Human resources : data stewards","People & Expertise",
+119,"The major challenge for our repository is personnel resources. The University of Salzburg, our host institution, has recently committed to two permanent positions. However, these roles come with additional responsibilities beyond the ANC. Another key area we're focusing on is governance. As a young repository with a small team, we currently rely on the core team and are working on building a community that will support both the core team and other users.","Human resources","Resources",
+119,"The major challenge for our repository is personnel resources. The University of Salzburg, our host institution, has recently committed to two permanent positions. However, these roles come with additional responsibilities beyond the ANC. Another key area we're focusing on is governance. As a young repository with a small team, we currently rely on the core team and are working on building a community that will support both the core team and other users.","Governance","Governance",
+119,"The major challenge for our repository is personnel resources. The University of Salzburg, our host institution, has recently committed to two permanent positions. However, these roles come with additional responsibilities beyond the ANC. Another key area we're focusing on is governance. As a young repository with a small team, we currently rely on the core team and are working on building a community that will support both the core team and other users.","Community outreach","External Engagement",
+138,"support from the host institution and manpower for the various needs of the repository","Human resources","Resources",
+138,"support from the host institution and manpower for the various needs of the repository","Support from parent / host institution","Governance",
+11,,"-",,
+31,,"-",,
+103,,"-",,
+66,,"-",,
+131,,"-",,
+60,,"-",,
+118,"Too much depends on the service provider.","Third party dependencies (Duraspace)","Third Party Dependencies",
+10,,"-",,
+106,,"-",,
+133,,"-",,
+57,,"-",,
+107,,"-",,
+127,"Support structure, legal support always needed","Legal or ethical issues about data","Legal & Ethical",
+68,"Just a note related to the previous question: I am not sure I understand everything that was listed in the previous question, but there was no option to select ""I don't know""","-",,
+14,"dependency on external service provider concerning improvement of the system; lack of staff","Third party dependencies (Ex Libris Rosetta)","Third Party Dependencies",
+14,"dependency on external service provider concerning improvement of the system; lack of staff","Human resources","Resources",
+9,,"-",,
+25,,"-",,
+134,"Some participating institutions cannot provide highly skilled staff. Too much depends on the service provider and although there is a SLA in place, there is a risk of unintended vendor lock-in.","Human resources skillset (participating institutions)","People & Expertise",
+134,"Some participating institutions cannot provide highly skilled staff. Too much depends on the service provider and although there is a SLA in place, there is a risk of unintended vendor lock-in.","Third party dependencies (Duraspace)","Third Party Dependencies",
+18,"Limited staff for repository maintenance and optimisation; awareness and adoption among researchers could be better","Human resources : development","People & Expertise",
+159,"Clear metrics. It is especially difficult to get an indication of reuse of datasets; Storage and costs; necessity of charging for storage of larger volumes of data.","Measurement/metrics","Analysis & Impact",
+143,"The biggest challenges I can identify are:
+- The wish from the community to host more sensitive data and how we can provide for this
+- With this legal and ethical considerations around sensitive data 
+- Professionalizing our service as we see the demands for formal certifications grow from the community
+- Being depended on short-term project funding while providing a sustainable service 
+- Having limited budget while the need for data services increase
+- Attracting skilled personnel
+- Training our staff (while already being short on time)
+- Keeping up to date with developments in the RDM and repository field","Support for sensitive data","Legal & Ethical",
+143,"The biggest challenges I can identify are:
+- The wish from the community to host more sensitive data and how we can provide for this
+- With this legal and ethical considerations around sensitive data 
+- Professionalizing our service as we see the demands for formal certifications grow from the community
+- Being depended on short-term project funding while providing a sustainable service 
+- Having limited budget while the need for data services increase
+- Attracting skilled personnel
+- Training our staff (while already being short on time)
+- Keeping up to date with developments in the RDM and repository field","Legal or ethical issues about data","Legal & Ethical",
+143,"The biggest challenges I can identify are:
+- The wish from the community to host more sensitive data and how we can provide for this
+- With this legal and ethical considerations around sensitive data 
+- Professionalizing our service as we see the demands for formal certifications grow from the community
+- Being depended on short-term project funding while providing a sustainable service 
+- Having limited budget while the need for data services increase
+- Attracting skilled personnel
+- Training our staff (while already being short on time)
+- Keeping up to date with developments in the RDM and repository field","Competition for funding / Project-based funding","Resources","Continuity of Service"
+67,"resources","Resources","Resources",
+136,"The most significant challenge is:
+- Measuring usage of our services, and thus impact. 
+
+Besides that, the following issues are challenging: 
+- The exact scope and target audience of our repository is continuously subject of debate. 
+- Funding is in part project based, which always poses challenges to continuity.
+- It is hard to find qualified personnel.
+- We function within a network of services and organisations, which creates dependencies which can be challenging.
+","Measuring the impact","Analysis & Impact",
+136,"The most significant challenge is:
+- Measuring usage of our services, and thus impact. 
+
+Besides that, the following issues are challenging: 
+- The exact scope and target audience of our repository is continuously subject of debate. 
+- Funding is in part project based, which always poses challenges to continuity.
+- It is hard to find qualified personnel.
+- We function within a network of services and organisations, which creates dependencies which can be challenging.
+","Assessing the scope / target audience","Mission & Scope",
+136,"The most significant challenge is:
+- Measuring usage of our services, and thus impact. 
+
+Besides that, the following issues are challenging: 
+- The exact scope and target audience of our repository is continuously subject of debate. 
+- Funding is in part project based, which always poses challenges to continuity.
+- It is hard to find qualified personnel.
+- We function within a network of services and organisations, which creates dependencies which can be challenging.
+","Human resources","Resources",
+136,"The most significant challenge is:
+- Measuring usage of our services, and thus impact. 
+
+Besides that, the following issues are challenging: 
+- The exact scope and target audience of our repository is continuously subject of debate. 
+- Funding is in part project based, which always poses challenges to continuity.
+- It is hard to find qualified personnel.
+- We function within a network of services and organisations, which creates dependencies which can be challenging.
+","Competition for funding / Project-based funding","Resources","Continuity of Service"
+136,"The most significant challenge is:
+- Measuring usage of our services, and thus impact. 
+
+Besides that, the following issues are challenging: 
+- The exact scope and target audience of our repository is continuously subject of debate. 
+- Funding is in part project based, which always poses challenges to continuity.
+- It is hard to find qualified personnel.
+- We function within a network of services and organisations, which creates dependencies which can be challenging.
+","Internal competition / dependencies","Mission & Scope","Governance"
+136,"The most significant challenge is:
+- Measuring usage of our services, and thus impact. 
+
+Besides that, the following issues are challenging: 
+- The exact scope and target audience of our repository is continuously subject of debate. 
+- Funding is in part project based, which always poses challenges to continuity.
+- It is hard to find qualified personnel.
+- We function within a network of services and organisations, which creates dependencies which can be challenging.
+","Measuring the impact","Analysis & Impact",
+132,,"-",,
+145,,"-",,
+46,"Finding, financing and keeping enough qualified personnel to enable high quality service operation and data curation.","Human resources : with expertise","People & Expertise",
+91,,"-",,
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Funding : Recognized models and guidelines for resource management in research repositories","Resources",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Funding : ensuring the long-term evolutions","Resources",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Funding : Advocacy support (help to discuss with the funders, recognized arguments)","Resources",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Continuity of service : Recognized models and guidelines for succession planning ; available frameworks and mechanisms for succession planning","Continuity of Service",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Human resources : skills framework","People & Expertise",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Human resources : professional and initial training programs","People & Expertise",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Closer engagement with the disciplinary community (Clarin)","External Engagement",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Closer engagement with the generalist community (RDA...)","External Engagement",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Measurement : meaningful indicators of mission achievement for TDRs","Analysis & Impact",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Legal issues : implementation of TK (Traditional Konwoledge) labels","Legal & Ethical",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Legal / regulatory : Recognized guidelines, frameworks, templates... for TDR policy & standards management","Legal & Ethical",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Legal issues : support (guidelines...) for GDPR or ethical requirements, including technical implementations, event at the file or element level","Legal & Ethical",
+20,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with Data Steward and similar communities at repository partner institutions; 2) Closer engagement with global communities such as RDA.  
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer collaboration between the partner institutions of our repository.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Infrastructure : having a European open, community driver research infrastructure","Resources",
+101,"Resources (people to do the work, and to allow us to do outreach to known untapped areas and take on the increased volume this would create). We are in a very decentralized institution and still sometimes face challenges around being in all of the rooms we should be (and knowing what they are).","Manage to cover the assigned perimeter (institutional) while keeping the pace technically","Continuity of Service",
+153,"Third Party Dependencies","Third party dependencies","Third Party Dependencies",
+80,,"-",,
+102,,"-",,
+77,"SLA between consortium members still needs to be resolved. Funding is multi annual and we are seeking additional funds for staff.","Legal : consortium management","Legal & Ethical",
+77,"SLA between consortium members still needs to be resolved. Funding is multi annual and we are seeking additional funds for staff.","Funding","Resources",
+152,,"-",,
+94,,"-",,
+79,"I cannot legally comment on them.","I cannot legally comment on them.","Other",
+122,"Human resources.","Human resources","Resources",
+5,"Stakeholder management; obtaining funding for making major improvements; researching significant improvements.","Funding","Resources",
+5,"Stakeholder management; obtaining funding for making major improvements; researching significant improvements.","Stakeholder management","Governance",
+93,"resources only come from competitive funding, thus is hard to find resources for basic activities and daily running of the archive","Funding","Resources",
+93,"resources only come from competitive funding, thus is hard to find resources for basic activities and daily running of the archive","Competition for funding / Project-based funding","Resources","Continuity of Service"
+135,,"-",,
+39,"lack of trained people , fragmentation of the community ","Training ","Training",
+39,"lack of trained people , fragmentation of the community ","Fragmentation of the community","External Engagement",
+111,,"-",,
+105,"No major challenges but we could profit from having more data stewards","Human resources : data stewards","People & Expertise",
+35,,"-",,
+112,,"-",,
+144,,"-",,
+61,,"-",,
+109,,"-",,
+116,"Research organizations utilizing our services are expected to have a model for data governance, but that's not always the case. Work in progress to clarify roles and responsibilities in research organizations' data management processes.
+Guidelines for research data appraisal needed, for research organizations.","Managing research organizations responsabilities (having them get a model for data governance)","External Engagement","Training"
+116,"Research organizations utilizing our services are expected to have a model for data governance, but that's not always the case. Work in progress to clarify roles and responsibilities in research organizations' data management processes.
+Guidelines for research data appraisal needed, for research organizations.","Having research data appraisal guidelines for research organizations","Other","Deposit & Appraisal"
+40,,"-",,
+96,"Note that not having definitions for the table above has made it hard to assess, apologies.","-",,
+121,,"-",,
+75,,"-",,
+120,,"-",,
+32,,"-",,
+95,"The challenges and needs our repository faces is the lack of resources, including funding and staff shortages in long term. Also, nationally and locally we expect changes in governance structures in the next 5 years.","Funding","Resources",
+95,"The challenges and needs our repository faces is the lack of resources, including funding and staff shortages in long term. Also, nationally and locally we expect changes in governance structures in the next 5 years.","Human resources","Resources",
+95,"The challenges and needs our repository faces is the lack of resources, including funding and staff shortages in long term. Also, nationally and locally we expect changes in governance structures in the next 5 years.","Change of governance in the near future","Governance",
+51,"Big data and data integrity","Data integrity","Other","Storage & Integrity"
+83,"Legal & Ethical: 
+- Data protection - ensuring the continuing anonymity of data in light of more and more linked information available on the web (e.g. driven by AI)
+- Monitoring and assessing Terms of Service, IPR in relation to data from (commercial) platforms (e.g. social media, etc), 
+
+Rights management: 
+- integration and harmonization of historically different approaches to rights management for different collections in our archive (different licensing schemes used) 
+
+Third Party Dependencies: 
+- dependency on software/systems/cloud-services of U.S.-based vendors
+In addition: Maintaining, assessing data quality of social science research data; challenging in particular for new data types, new research methods","Legal : GDPR / anonymity","Legal & Ethical",
+83,"Legal & Ethical: 
+- Data protection - ensuring the continuing anonymity of data in light of more and more linked information available on the web (e.g. driven by AI)
+- Monitoring and assessing Terms of Service, IPR in relation to data from (commercial) platforms (e.g. social media, etc), 
+
+Rights management: 
+- integration and harmonization of historically different approaches to rights management for different collections in our archive (different licensing schemes used) 
+
+Third Party Dependencies: 
+- dependency on software/systems/cloud-services of U.S.-based vendors
+In addition: Maintaining, assessing data quality of social science research data; challenging in particular for new data types, new research methods","Legal : Intellectual property rights","Legal & Ethical",
+83,"Legal & Ethical: 
+- Data protection - ensuring the continuing anonymity of data in light of more and more linked information available on the web (e.g. driven by AI)
+- Monitoring and assessing Terms of Service, IPR in relation to data from (commercial) platforms (e.g. social media, etc), 
+
+Rights management: 
+- integration and harmonization of historically different approaches to rights management for different collections in our archive (different licensing schemes used) 
+
+Third Party Dependencies: 
+- dependency on software/systems/cloud-services of U.S.-based vendors
+In addition: Maintaining, assessing data quality of social science research data; challenging in particular for new data types, new research methods","Legal : coordinating different rights management / licensing schemes  inside the repository","Legal & Ethical",
+83,"Legal & Ethical: 
+- Data protection - ensuring the continuing anonymity of data in light of more and more linked information available on the web (e.g. driven by AI)
+- Monitoring and assessing Terms of Service, IPR in relation to data from (commercial) platforms (e.g. social media, etc), 
+
+Rights management: 
+- integration and harmonization of historically different approaches to rights management for different collections in our archive (different licensing schemes used) 
+
+Third Party Dependencies: 
+- dependency on software/systems/cloud-services of U.S.-based vendors
+In addition: Maintaining, assessing data quality of social science research data; challenging in particular for new data types, new research methods","Third party dependencies","Third Party Dependencies",
+83,"Legal & Ethical: 
+- Data protection - ensuring the continuing anonymity of data in light of more and more linked information available on the web (e.g. driven by AI)
+- Monitoring and assessing Terms of Service, IPR in relation to data from (commercial) platforms (e.g. social media, etc), 
+
+Rights management: 
+- integration and harmonization of historically different approaches to rights management for different collections in our archive (different licensing schemes used) 
+
+Third Party Dependencies: 
+- dependency on software/systems/cloud-services of U.S.-based vendors
+In addition: Maintaining, assessing data quality of social science research data; challenging in particular for new data types, new research methods","Assessing data quality across new formats and research methods","Other","Deposit & Appraisal"
+55,,"-",,
+63,"different steakholders","Governance / multiple stakeholders","Governance",
+130,"Some participating institutions cannot provide highly skilled staff.","Human resources skillset (participating institutions)","People & Expertise",
+123,,"-",,
+110,"The entry into CISC raises doubts about the continuity of the IGME's institutional repository as an independent entity. If this is the result, the particularity of the geological data with its intrinsic and substantial spatial component would be diluted as another attribute, which would result in a loss of accuracy in finding the products searched for. In addition, the level of expertise of the technicians required to maintain the repository puts the permanence of these technicians in the teams at risk.","Potential loss of accuracy inside a larger repository/network","Mission & Scope","Governance"
+7,"1) Our repository has a very diverse user base, ranging from experienced computer scientists to interested laymen. Making sure that all those users can use the data at their level is a big challenge. 
+2) Complex legal and ethical issues, including issues of copyright, intellectual property, and user consent.
+3) Ensuring consistent quality and curation of language materials is very labor intensive which can make it difficult to find the necessary manpower.
+","Very diverse user base","External Engagement",
+7,"1) Our repository has a very diverse user base, ranging from experienced computer scientists to interested laymen. Making sure that all those users can use the data at their level is a big challenge. 
+2) Complex legal and ethical issues, including issues of copyright, intellectual property, and user consent.
+3) Ensuring consistent quality and curation of language materials is very labor intensive which can make it difficult to find the necessary manpower.
+","Legal and ethical issues :  copyright, Intellectual property, user consent.","Legal & Ethical",
+155,"Especially power outage affecting the servers","Server maintenance (power outage)","Other","Technical Infrastructure"
+3,"At this moment there are no challenges.","-",,
+149,,"-",,
+69,,"-",,
+128,"The repository's reach to its user base isn't as strong as it could be. There the impact of training is less than it could be.","Link to the user base","External Engagement",
+128,"The repository's reach to its user base isn't as strong as it could be. There the impact of training is less than it could be.","User training","Training",
+114,,"-",,
+27,"Coordinating multiple stakeholders, institutions and domain experts: usually with different modes of operation","Coordinating stakeholders","Governance",
+89,,"-",,
+12,,"-",,
+76,,"-",,
+137,"Development of and cooperation with the university's CRIS system, which is currently under construction.","Development of and cooperation with the university's CRIS system, which is currently under construction.","Third Party Dependencies",
+53,,"-",,
+43,"Staff members with expertise in the field are very hard to get; Interoperability is challenging due to the different ways to name small molecules","Human resources : with expertise","People & Expertise",
+47,"Staff members with expertise in the field are very hard to get; Interoperability is challenging due to the different ways to name small molecules","Semantic interoperability","Other","Interoperability"
+34,,"-",,
+13,,"-",,
+99,,"-",,
+21,"Increasing visibility and user base; juggling maintenance and technical tasks with novel feature development and scientific analysis that usually accompanies a research article release. ","Increase visibility","Mission & Scope",
+17,"(1) obtaining funding for necessary development; (2) lack of framework for coordinating data deposition with manuscript reviews in research journals","Funding","Resources",
+17,"(1) obtaining funding for necessary development; (2) lack of framework for coordinating data deposition with manuscript reviews in research journals","Framework for depositing data linked to publications","Other",
+16,,"-",,
+157,"Acceptance by Higher Education researchers as a logical RDM platform given institutional resource constraints, as well as difficulties in regulatory compliance. ","Support from parent / host institution","Governance","Mission & Scope"
+157,"Acceptance by Higher Education researchers as a logical RDM platform given institutional resource constraints, as well as difficulties in regulatory compliance. ","Regulatory compliance","Legal & Ethical",
+56,,"-",,
+140,"Securing resources; finding staff / advisors with required expertise; obtaining user feedback","Human resources : with expertise","People & Expertise",
+23,,"-",,
+141,,"-",,
+154,"Dependence on external third party software suppliers","Third party dependencies","Third Party Dependencies",
+24,,"-",,
+148,"We are relying on 3rd party software, so there would be a challenge if the University stopped funding the subscription, or if the company went out of business. We struggle to get any meaningful usage statistics about the data held on our repository.","Third party dependencies [Figshare]","Third Party Dependencies",
+74,,"-",,
+48,"to find fundings to improve and modernize our software platform","Funding","Resources",
+48,"to find fundings to improve and modernize our software platform","Improve software","People & Expertise",
+150,"Organisational infrastructure as a whole is a challenge, for PANGAEA its distributed organisational structure has been in particular challenging.","Governance","Governance",
+71,,"-",,
+58,,"-",,
+124,,"-",,
+49,,"-",,
+52,"The lack of long term funding, and also maybe the lack of people with expertise in proteomics","Funding","Resources",
+52,"The lack of long term funding, and also maybe the lack of people with expertise in proteomics","Human resources : with expertise","People & Expertise",
+87,"Funding for long-term continuity.","Funding","Resources",
+100,"For the technical infrastructure of our repository, we depend on a partner institution and a third party provider. To facilitate this collaboration we are working to recruit someone in-house who can work closely with the partner institution and third party provider.  ","Coordination between a partner institution and a third party provider","Third Party Dependencies",
+156,"To little time to develop and no people with expertise on preservation. External engagement is somewhat hard since I do not know of a community with knowledge about TDRs. A community watch is challenging for an institutional data repository, since the community is so generalist that their requirements are very variable. ","Preservation","Other","Preservation"
+156,"To little time to develop and no people with expertise on preservation. External engagement is somewhat hard since I do not know of a community with knowledge about TDRs. A community watch is challenging for an institutional data repository, since the community is so generalist that their requirements are very variable. ","Human resources : preservation","People & Expertise",
+156,"To little time to develop and no people with expertise on preservation. External engagement is somewhat hard since I do not know of a community with knowledge about TDRs. A community watch is challenging for an institutional data repository, since the community is so generalist that their requirements are very variable. ","Community connection (generalist repository)","External Engagement",
+113,,"-",,
+6,"possible complexity of the governance due to the number of intitutions involved","Diversity of stakeholders","Governance",
+6,"possible complexity of the governance due to the number of intitutions involved","Governance","Governance",
+6,,"-",,
+37,,"-",,
+22,,"-",,
+126,,"-",,
+28,,"-",,
+33,"WE NEED MORE MONEY :)","Funding","Resources",
+72,"Fragmentation of ownership; continuity between stakeholders; lack of understanding at SML of need for sustainable, ongoing investment and resourcing","Fragmentation of ownership","Governance","Mission & Scope"
+72,"Fragmentation of ownership; continuity between stakeholders; lack of understanding at SML of need for sustainable, ongoing investment and resourcing","Support from parent / host institution","Governance","Mission & Scope"
+72,"Fragmentation of ownership; continuity between stakeholders; lack of understanding at SML of need for sustainable, ongoing investment and resourcing","Diversity of stakeholders","Governance",
+72,"Fragmentation of ownership; continuity between stakeholders; lack of understanding at SML of need for sustainable, ongoing investment and resourcing","Funding","Resources",
+97,,"-",,
+38,,"-",,
+42,"lack of manpower to coordinate work","Human resources","People & Expertise",
+125,,"-",,
+129,"no challanges","No challenges","Other",
+88,,"-",,
+41,,"-",,
+36,,"-",,
+8,,"-",,
+151,,"-",,
+158,"Resources","Human resources","Resources",
+70,"Significantly, measuring the impact of the available datasets is hard due to the difficulty of identifying who, how, when and for what. This depends on the one hand on the community practices and on the other hand, on implementing mechanisms to track the use of the data. In addition, it is time consuming the implementation of data assessment techniques overall. Lastly, it is challenging, to implement and effective governance model and to maintain, and improve (based on IT research) the software in charge of operations. ","Measuring the impact","Analysis & Impact",
+70,"Significantly, measuring the impact of the available datasets is hard due to the difficulty of identifying who, how, when and for what. This depends on the one hand on the community practices and on the other hand, on implementing mechanisms to track the use of the data. In addition, it is time consuming the implementation of data assessment techniques overall. Lastly, it is challenging, to implement and effective governance model and to maintain, and improve (based on IT research) the software in charge of operations. ","Improve software","People & Expertise",
+64,,"-",,
+59,,"-",,
+30,,"-",,
+84,,"-",,
+115,,"-",,
+78,,"-",,
+86,,"-",,
+85,,"-",,
+2,"Funding; capacity for training and outreach","Funding","Resources",
+98,"As the digital archive continues to grow, lack of personnel resources is always a challenge, even though the team is already comparatively large.
+Third party dependencies on the SW vendor is an ongoing risk which has been monitored from the start - at the same time, in house development of a comparable solution is also not only not feasible but would in addition make no sense as that would significantly increase the risk of lack of resources (for additional development) even further. ","Human resources","Resources",
+98,"As the digital archive continues to grow, lack of personnel resources is always a challenge, even though the team is already comparatively large.
+Third party dependencies on the SW vendor is an ongoing risk which has been monitored from the start - at the same time, in house development of a comparable solution is also not only not feasible but would in addition make no sense as that would significantly increase the risk of lack of resources (for additional development) even further. ","Third party dependencies (Ex Libris Rosetta)","Third Party Dependencies",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Funding : Recognized models and guidelines for resource management in research repositories","Resources","Analysis & Impact"
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Funding : ensuring the long-term evolutions","Resources","Continuity of Service"
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Funding : Advocacy support (help to discuss with the funders, recognized arguments)","Resources","Governance"
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Continuity of service : Recognized models and guidelines for succession planning ; available frameworks and mechanisms for succession planning","Continuity of Service","People & Expertise"
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Human resources : skills framework","People & Expertise",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Human resources : professional and initial training programs","People & Expertise","Training"
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Closer engagement with the disciplinary community (Clarin)","External Engagement",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Closer engagement with the generalist community (RDA...)","External Engagement",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Measurement : meaningful indicators of mission achievement for TDRs","Analysis & Impact",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Legal issues : implementation of TK (Traditional Konwoledge) labels","Legal & Ethical",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Legal / regulatory : Recognized guidelines, frameworks, templates... for TDR policy & standards management","Legal & Ethical",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Legal issues : support (guidelines...) for GDPR or ethical requirements, including technical implementations, event at the file or element level","Legal & Ethical",
+19,"RESOURCES: 
+Could profit from: 1) Recognized models and guidelines for resource management in research repositories; 2) Increased resource allocations to allow for larger enhancements and long-term planning of repository development, e.g., through increased local, national, European and global investment in and prioritization of open, community-driven research infrastructure, including human capacity; 3) Advocacy support, e.g., aligned and recognized arguments, to use when discussing with our funders the need for sustainable funding to obtain TDR status and retain it in the long run.
+
+CONTINUITY OF SERVICE: 
+Could profit from: 1) Recognized models and guidelines for succession planning; 2) Available frameworks and mechanisms for succession planning, e.g., European or global ”succession” consortia which individual repositories can join.  
+
+PEOPLE & EXPERTISE: 
+Could profit from: 1) Recognized competency and skills framework and curricula for different repository roles, e.g., repository manager, collection manager, curator; 2) European or global education and training programs based on curricula in (1) and based on Open Education principles.  
+
+EXTERNAL ENGAGEMENT: 
+Could profit from: 1) Closer engagement with CLARIN community; 2) Closer engagement with global communities such as RDA, in particular the RDA Linguistics Data Interest Group. 
+
+COMMUNITY WATCH: 
+Could profit from: 1) Closer engagement with user communities; 2) Recognized methods and approaches for community engagement considering the currently low level of incentives.  
+
+LEGAL & ETHICAL: 
+Could profit from: Implementation of TK Labels to support management og data sovereignty.
+
+POLICY & STANDARDS MANAGEMENT: 
+Could profit from: 1) Recognized guidelines and templates for TDR policy & standards management; 2) More globally recognized frameworks that TDRs can endorse and implement in their policies instead of reinventing the wheel within each TDR.  
+
+CRITERIA, ASSESSMENT, IMPROVEMENT: 
+Could profit from: 1) Recognized guidelines and templates for internal compliance management to guide continuous, targeted improvement.  
+
+ANALYSIS & IMPACT: 
+Currently not prioritized, but could profit from: 1) Framework including meaningful indicators of mission achievement for TDRs.  
+
+RIGHTS MANAGEMENT: 
+Could profit from: 1) Harmonization/Adaption of GDPR to better align with recognized research needs and responsible and transparent research practices; 2) Globally/Europe-wide/Nationally endorsed clear practical guidelines for how to assess and manage data in TDRs in compliance with legal (e.g., GDPR, IPR) and ethical requirements to support transparent practices; 3) Globally endorsed guidelines for granular rights management in datasets or collections with files/elements with different IPR or data privacy needs; 4) A technical implementation of (3).  
+
+TRAINING: 
+Could profit from: 1) Closer integration of TDR-relevant training in research methods curricula at Master and PhD level; 2) Closer engagement with designated community.  
+
+RESEARCH & DEVELOPMENT: 
+Could profit from: 1) Increased recognition of the importance of R&D of research infrastructure to advance transparent and accountable research and innovation; 2) Increased allocation of funding for R&I on research infrastructure including human capacity; 3) Advocacy for allocating R&I resources in TDR budgets.  
+
+THIRD PARTY DEPENDENCIES: 
+Could profit from: 1) Increased local, national, European and global recognition of and long-term investment in open, community-driven research infrastructure, including human capacity.
+","Infrastructure : having a European open, community driver research infrastructure","Resources","Technical Infrastructure"
+44,,"-",,
+54,"We have sufficient process and supporting evidence for all of the above that are related to CoreTrustSeal. But for these and others there is a lack of community consensus on the minimum necessary practice and supporting guidance/templates for good practice","Lack of common practice","External Engagement",
+4,,"-",,
+26,,"-",,
+90,"We do not have any issues with the challenges listed above as we use Figshare's infrastructure, which is already highly developed and geared towards a generalist repository paradigm. ","Using Figshare's infrastructure means no challenge","Other","No challenge"
+65,,"-",,
+73,,"-",,
+81,,"-",,
+82,,"-",,
+117,"The major challenge we face is the existence of another database that works in parallel with the repository and is favoured by the administration. This situation challenges the mission of the VinaR repository, because it makes most of the researchers confused of which infrastructure should be used. On the one hand, VinaR repository is stable, standardised and interoperable with all significant research platforms and services, including the national CRIS system eNauka. On the other hand is the institutional database which is made as an ad hoc system only for internal institutional use without any integration and connection with other services. But, for some reason, it is favoured by the management and administration. The struggle to advocate for VinaR repository continues.","Internal competition with another repository","Mission & Scope","Governance"
+139,"The lack of persistent funding has an impact on almost all aspects cited above.","Funding","Resources",
+147,,"-",,
+146,,"-",,
+45,"Funding dedicated to operations and community outreach to handle a growing user base.","Funding the community outreach","External Engagement",
+45,"Funding dedicated to operations and community outreach to handle a growing user base.","Keeping up with the user base","External Engagement",
