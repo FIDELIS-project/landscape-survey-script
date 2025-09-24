@@ -92,9 +92,10 @@ More specifically, the questions were as follows:
 - Q34: For the reuse of code/software, which licence(s) does your repository apply?
 - Q35: For the reuse of digital objects other than metadata, data or code/software, which licence(s) does your repository apply? Please specify the type of digital object and the licence(s)
 
-Q32_Q33_Q34_Q35_licences.xlsx.zip: Excel file used for treatment
-Q32_Q33_Q34_Q35_answers.csv: the untreated, anonymized answers
-Q32_Q33_Q34_Q35_data_licences.csv: the treated answers regarding data licences
-Q32_Q33_Q34_Q35_metadata_licences.csv: the treated answers regarding metadata licences
-Q32_Q33_Q34_Q35_software_licences.csv: the treated answers regarding software licences
-Q32_Q33_Q34_Q35_other_licences.csv: the treated answers regarding licences for other types of content.
+Answers and analyses are in the following files :
+- Q32_Q33_Q34_Q35_licences.xlsx.zip: Excel file used for treatment
+- Q32_Q33_Q34_Q35_answers.csv: the untreated, anonymized answers
+- Q32_Q33_Q34_Q35_data_licences.csv: the treated answers regarding data licences
+- Q32_Q33_Q34_Q35_metadata_licences.csv: the treated answers regarding metadata licences
+- Q32_Q33_Q34_Q35_software_licences.csv: the treated answers regarding software licences
+- Q32_Q33_Q34_Q35_other_licences.csv: the treated answers regarding licences for other types of content.
