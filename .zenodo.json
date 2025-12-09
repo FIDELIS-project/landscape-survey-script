@@ -1,0 +1,73 @@
+{
+    "title": "FIDELIS landscape survey analysis scripts",
+    "upload_type": "software",
+
+    "publication_date": "2025-12-15",
+    "creators": [
+        {
+            "name": "Jouneau, Thomas",
+            "affiliation": "Université de Lorraine",
+            "orcid": "0000-0003-3204-5206"
+        },
+
+        {
+            "name": "Horton, Laurence",
+            "affiliation": "Digital Curation Centre",
+            "orcid": "0000-0002-2924-1722"
+        },
+        {
+            "name": "van Geest, Geert",
+            "affiliation": "SIB Swiss Institute of Bioinformatics",
+            "orcid": "0000-0002-1561-078X"
+        },
+        {
+            "name": "Verburg, Maaike",
+            "affiliation": "Data Archiving and Networked Services",
+            "orcid": "0000-0002-8407-6603"
+        }
+   
+    ],
+    "description": "The FIDELIS project aims to establish a European Network of Trustworthy Digital Repositories (TDRs) that will support their development and growth, foster harmonisation and interoperability, and strengthen relevant skills through training and support. For this project to successfully achieve its goals, input was gathered from the community on their current practices, challenges, and needs. The outputs of this survey will be used to shape the activities of the project in the next years, and subsequently help shape the FIDELIS Network as it is designed and implemented. The scripts contained in this repository were used to analyse the survey results.",
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "keywords": [
+        "FIDELIS",
+        "Network",
+        "Survey",
+        "survey analysis",
+        "Repositories",
+        "Activities and Functions",
+        "TTRAM",
+        "Legal challenges",
+        "Training",
+        "Support",
+        "community",
+        "TDR"
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "10.17026/SS/XX8PBN",
+            "relation": "requires",
+            "resource_type": "dataset",
+            "scheme": "doi"
+        },
+        {
+            "identifier": "10.5281/zenodo.15744996",
+            "relation": "isSupplementTo",
+            "resource_type": "publication-milestone",
+            "scheme": "doi"
+        }
+    ],
+    "grants": [
+        {
+            "id": "00k4n6c32::101188078"
+        }
+    ],
+    "communities": [
+        {
+            "identifier": "fidelis-project"
+        }
+    ],
+    "version": "1.0",
+    "language": "eng"
+}
