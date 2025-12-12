@@ -1,0 +1,3925 @@
+---
+title: "FIDELIS Repository Landscape Survey"
+author: "Laurence Horton"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  word_document: default
+  ioslides_presentation: default
+  powerpoint_presentation: default
+css: style.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r library, include = FALSE}
+library(tidyverse)
+library(readxl)
+library(scales)
+library(knitr)
+```
+```{r Create new ggplot theme, include=FALSE}
+theme_fidelis <- function (base_size = 18,
+                       base_family = "") {
+  theme_classic() %+replace%
+    theme(
+      plot.background = element_rect(colour = "#ffffff"),
+      # White
+      legend.position = "bottom",
+      # Legend at bottom of visualisation
+      panel.grid.major  = element_line(colour = "#ffffff"),
+      # White
+      panel.background = element_rect(fill = "#ffffff", colour = "#ffffff"),
+      # White
+      panel.border = element_rect(colour = "#ffffff", fill = NA),
+      # White
+      axis.line = element_line(colour = "#97999B"),
+      #Cool Gray 7
+      axis.ticks = element_line(colour = "#97999B"),
+      # Cool Gray 7
+      axis.text = element_text(colour = "#75787B"),
+      # Cool Gray 9
+      text = element_text(family = "Calibri", colour = "#75787B") # Cool Gray 9
+    )
+}
+```
+```{r fidelis colours, include=FALSE}
+fidelis_colours <-
+  c("#FBB03B", # Pastel orange
+    "#001B6D", # Midnight blue
+    "#3C85FA", # Bright blue
+    "#8ABAE7", # Cyan
+    "#D8E5F3", # Light grayish blue.
+    "#6e5200", # Very dark orange
+    "#e4fa3c" # Bright yellow.
+    )
+bar_chart_colours <- c("#D8E5F3", "#8ABAE7", "#3C85FA", "#001B6D", "#FBB03B")
+```
+
+Data source:  
+
+M. Verburg; T. Jouneau; L. Horton; G. van Geest; S. Tujunen; J. Kallio; T. Paulsen; P. Conzett; T. Alaterä; M. Kleemola; J. Meijer; Å.J. Holthe-Tveit; A.K. Forshaug, 2025, "Repository landscape data for the FIDELIS project", https://doi.org/10.17026/SS/XX8PBN, DANS Data Station Social Sciences and Humanities, V1
+
+```{r download data, include=FALSE}
+# Works only with the Excel version of the data set.
+fidelis <- read_excel("~/FIDELIS_LandscapeSurvey_Data.xlsx")
+```
+
+[<img src="EOSC Fidelis Final Logo.png" width="250"/>](EOSC Fidelis Final Logo.png)
+
+# Sections
+- [Repository characteristics](#repository-characteristics)
+- [Activites and functions](#activities-functions)
+  - [Digital Object Management](#digital-object)
+  - [Organisational Infrastructure](#organisational-infrastructure)
+  - [Technology and Security](#technology-security)
+- [Training and support needs](#training-support)
+- [Legal challenges](#legal-challenges)
+- [FIDELIS network interest and expectations](#network-interest)
+- [Closing question](#closing-question)
+
+Thank you for participating in the FIDELIS Landscape Survey!  
+
+The FIDELIS project is funded by the European Commission to work towards establishing a European network of FAIR-enabling Trustworthy Digital Repositories (TDRs). Over its three-year duration, FIDELIS will set up, develop and operate a European network of trustworthy repositories that will: support the development and growth of TDRs within the EOSC ecosystem; foster harmonisation and interoperability across repositories to enable an EOSC federation of TDRs; and strengthen the upskilling of repositories and expand the network through an active training and support programme.  
+
+This survey aims to contribute to our understanding of the current needs of repositories in specific areas. The results will inform different parts of the project, guiding efforts in providing harmonisation, training, and support.  
+
+Repositories come in many different forms. For the purpose of this survey, we use the term “repository” to encompass all services that manage research objects (data, software, literature, or other), regardless of whether they are labelled as a repository, archive, e-depot, or anything else. Other data service providers and registries are also welcome to participate in the survey, though some questions may be less relevant to your organisation, operations, and needs. You will be able to indicate your repository type and primary content type(s) in the survey. While the FIDELIS project primarily focuses on Europe, repositories outside Europe are welcome to participate.  
+
+The survey consists of a core set of questions, with optional supplementary questions for those who wish to provide additional information. When you indicate willingness to answer additional questions, you are not obliged to answer all questions. The core questions are estimated to take around 20 minutes, with the whole survey taking approximately 40 minutes if all additional questions are also answered. Because of the inclusion of open ended questions, the true duration of the survey will vary largely between people.  
+
+As this survey focuses on identifying needs, you may respond from your personal perspective. Please invite your colleagues to also respond to the survey so we can gather as much input as possible from respondents with different expertise areas and responsibilities.  
+
+Participation in this survey is voluntary. You may choose not to participate, not to answer certain questions, or end your participation prior to submitting the survey without any negative consequences.  
+
+**What do we do with your data?**  
+
+The results of this survey will be analysed and reported. These reports and the dataset will be made available for public reuse under a CC-BY licence. Individually identifiable characteristics will be removed from the dataset before publishing (i.e. ‘e-mail address’ and ‘role in the repository’), but FIDELIS will remain in possession of the non-anonymised dataset throughout the duration of the project. The repository represented in the survey will not be anonymised. EU Survey has been set to 'anonymous mode' and will not collect any additional personal data.  
+
+FIDELIS works closely with its sister project, EOSC EDEN. EOSC EDEN will develop user-centric tools, services and standards to support the establishment of a European distributed infrastructure for long-term preservation, curation and access. With a somewhat different, but related scope, EOSC EDEN aims to learn more about the current landscape and its needs. With your consent, which you can separately indicate below, we will share your non-anonymised data and contact information with EOSC EDEN so they can contact you for follow-up questions or further information collection (e.g. interviews).  
+
+FIDELIS and EOSC EDEN have just recently started. A joint website for both projects is under development. It will serve as the central hub where you will be able to learn about the projects’ activities, find all outputs, sign up for the newsletter and join all training and support activities. With your consent, which you can separately indicate below, we will contact you directly once the website is live so you can register and follow our progress.  
+
+Fields marked with * are mandatory.  
+
+## Repository characteristics {#repository-characteristics}
+
+These initial questions gather contextual information about the repository to enable meaningful analysis of the results.  
+
+***What is the name of the repository you represent?**  
+If you represent multiple repositories, please choose one to focus on in the survey. You may retake the survey to represent another repository.  
+```{r characteristics name, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "What is the name of the repository you represent? If you represent multiple repositories, please choose one to focus on in the survey. You may retake the survey to represent another repository."
+    ) |>
+    rename("Repository" = 1)
+)
+```
+
+***In which country is your repository located?**  
+If your repository is related to multiple countries, select the country where headquarters are located.  
+```{r characteristics country, echo = FALSE}
+characteristics_country <- fidelis |>
+  select(
+    "In which country is your repository located? If your repository is related to multiple countries, select the country where headquarters are located."
+  ) |>
+  drop_na() |>
+  rename("Country" = 1)
+
+characteristics_country_other <- fidelis |>
+  select("Other, namely:...3") |>
+  drop_na() |>
+  rename("Country" = 1)
+
+# Add "Other" countries
+characteristics_country <- rbind(characteristics_country, characteristics_country_other)
+
+characteristics_country <- characteristics_country |>
+  filter(Country != "Other") |>
+  count(Country) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_country |>
+  ggplot(aes(fct_reorder(Country, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", sum(characteristics_country$n))
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 25))
+```
+
+***Please provide the link to your repository’s website.**  
+```{r characteristics website, echo = FALSE}
+kable(
+  fidelis |>
+    select("Please provide the link to your repository’s website.") |>
+    rename("Website" = 1) |>
+    drop_na()
+)
+```
+
+**Please provide all persistent identifier(s) your repository can be identified by.**  
+For each persistent identifier schema your repository is registered with, please provide the identifier. If your repository does not use a certain identifier, you can leave it empty.  
+
+Research Organization Registry (ROR):  
+```{r PID ROR, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "Please provide all persistent identifier(s) your repository can be identified by. : 1 : URL"
+    ) |>
+    rename("ROR" = 1) |>
+    drop_na()
+)
+```
+
+Re3data identifier:  
+```{r PID Re3data, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "Please provide all persistent identifier(s) your repository can be identified by. : 2 : URL"
+    ) |>
+    rename("Re3data" = 1) |>
+    drop_na()
+)
+```
+
+FAIRsharing DOI:  
+```{r PID FAIRSharing, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "Please provide all persistent identifier(s) your repository can be identified by. : 3 : URL"
+    ) |>
+    rename("DOI" = 1) |>
+    drop_na()
+)
+```
+
+Other(s):  
+```{r PID Others, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "Please provide all persistent identifier(s) your repository can be identified by. : 4 : URL"
+    ) |>
+    rename("PID" = 1) |>
+    drop_na()
+)
+```
+
+***Which type best describes your repository?**  
+```{r characteristics type, echo = FALSE}
+characteristics_type <- fidelis |>
+  select(
+    "Which type best describes your repository?"
+  ) |>
+  drop_na() |>
+  rename("Type" = 1) |>
+  count(Type) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_type |>
+  ggplot(aes(fct_reorder(Type, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      sum(characteristics_type$n))
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 55))
+
+# Others
+kable(
+  fidelis |>
+    select("Other, namely:...10") |>
+    drop_na() |>
+    rename("Type_other" = 1) |>
+    separate(Type_other, c("Type_other"), ";")
+)
+```
+
+***Is your repository domain-specific or generalist?**  
+Select domain-specific if your repository offers specialist services for one or more scientific domains.  
+
+Select general-purpose if your repository offers services that are not tailored to a repository.  
+```{r characteristics generalist, echo = FALSE}
+characteristics_domain <- fidelis |>
+  select("Is your repository domain-specific or generalist?") |>
+  drop_na() |>
+  rename("Domain" = 1) |>
+  count(Domain) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_domain |>
+  ggplot(aes(x = "", y = n, fill = Domain)) +
+  geom_bar(stat = "identity", width = .425) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = paste0(n, "\n", Domain)),
+    family = "Calibri",
+    position = position_stack(vjust = .5),
+    size = 5,
+    colour = "#75787B"
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", sum(characteristics_domain$n))
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  coord_flip()
+```
+
+***Which domains does your repository serve?**  
+Select all that apply.
+```{r characteristics domain, echo = FALSE}
+characteristics_domain <- fidelis |>
+  select(
+    "Which domain(s) does your repository serve? Select all that apply."
+  ) |>
+  drop_na()
+
+responses <- nrow(characteristics_domain)
+  
+characteristics_domain <-
+  characteristics_domain |>
+  rename("Domain" = 1) |>
+  separate_wider_delim(Domain, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Domain")) |>
+  select(value) |>
+  rename(Domain = value) |>
+  drop_na() |>
+  count(Domain) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_domain |>
+  ggplot(aes(fct_reorder(Domain, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      responses,
+      ", ",
+      "respondents could select all that apply"
+    )
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 60))
+```
+
+**Which communit(y/ies) is your repository a part of?**  
+Select all applicable.  
+```{r characteristics community, echo = FALSE}
+characteristics_community <- fidelis |>
+  select(
+    "Which communit(y/ies) is your repository a part of? Select all applicable."
+  ) |>
+  drop_na()
+
+responses <- nrow(characteristics_community)
+  
+characteristics_community <-
+  characteristics_community |>
+  rename("Community" = 1) |>
+  separate_wider_delim(Community, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Community")) |>
+  select(value) |>
+  rename(Community = value) |>
+  drop_na() |>
+  count(Community) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_community |>
+  ggplot(aes(fct_reorder(Community, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      responses,
+      ", ",
+      "respondents could select all that apply"
+    )
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 40))
+
+# Other responses
+# separate first on ; then on ,
+kable(
+  fidelis |>
+    select("Other, namely:...16") |>
+    rename("Community" = 1) |>
+    separate_wider_delim(Community, "; ", names_sep = "", too_few = "align_start") |>
+    pivot_longer(cols = starts_with("Community")) |>
+    select(value) |>
+    rename(Community = value) |>
+    drop_na() |>
+    separate_wider_delim(Community, ", ", names_sep = "", too_few = "align_start") |>
+    pivot_longer(cols = starts_with("Community")) |>
+    select(value) |>
+    rename(Community = value) |>
+    drop_na() |>
+    count(Community) |>
+    arrange(desc(n))
+)
+```
+
+***What is the legal status of your repository?**  
+Legal status refers to the official recognition and authorization granted by a government to an individual or group,determining their rights and privileges within a particular country.  
+
+Select the legal status that best describes your repository, or add your legal status by selecting 'other'.  
+```{r characteristics legal, echo = FALSE}
+characteristics_legal <- fidelis |>
+  select("What is the legal status of your repository?") |>
+  drop_na()
+
+characteristics_legal <-
+  characteristics_legal |>
+  rename("Legal" = 1) |>
+  count(Legal) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_legal |>
+  ggplot(aes(fct_reorder(Legal, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", sum(characteristics_legal$n))
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 85))
+```
+
+***What is/are the primary content type(s) in your repository holdings?**  
+Select all applicable.  
+```{r characteristics content, echo = FALSE}
+characteristics_content <- fidelis |>
+  select(
+    "What is/are the primary content type(s) in your repository holdings? Select all applicable."
+  ) |>
+  drop_na()
+
+responses <- nrow(characteristics_content)
+
+characteristics_content <-
+  characteristics_content |>
+  rename("Content" = 1) |>
+  separate_wider_delim(Content, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Content")) |>
+  select(value) |>
+  rename(Content = value) |>
+  drop_na() |>
+  count(Content) |>
+  arrange(desc(n))
+
+# Visualisation
+characteristics_content |>
+  ggplot(aes(fct_reorder(Content, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 150))
+
+# Other responses
+# separate first on ; then on ,
+kable(
+  fidelis |>
+    select("Other, namely:...18") |>
+    rename("Content" = 1) |>
+    separate_wider_delim(Content, ", ", names_sep = "", too_few = "align_start") |>
+    pivot_longer(cols = starts_with("Content")) |>
+    select(value) |>
+    rename(Content = value) |>
+    drop_na() |>
+    count(Content) |>
+    arrange(desc(n))
+)
+```
+
+**Please provide a description of your repository holdings.**  
+For example “Mainly datasets produced in social science survey research” or “All research outputs produced in country X”  
+```{r characteristics description, echo = FALSE}
+kable(
+  fidelis |>
+    select("Please provide a description of your repository holdings.") |>
+    drop_na()
+)
+```
+
+**What levels of retention, curation, and preservation does your repository provide?**  
+For each level, please indicate the status that most accurately fits the situation of your repository.  
+
+* As deposited - Digital object content and supporting metadata are distributed to users exactly as they are provided by depositors.  
+
+* Deposit compliance - Digital object content and supporting metadata deposited are checked for compliance with defined criteria, e.g. digital object formats, metadata elements, and compliance with legal and ethical norms.  
+
+* Initial curation - The digital objects are curated by your repository to meet defined criteria, which may exceed those defined for Deposit Compliance.  
+
+* Active preservation - In addition to Deposit Compliance and Initial Curation, your repository takes long-term responsibility for ensuring that the digital objects and metadata can be understood and rendered as required by the designated community for reuse. 
+
+```{r characteristics levels, echo = FALSE}
+as_deposited <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : As deposited - Digital object content and supporting metadata are distributed to users exactly as they are provided by depositors.") |>
+  rename("Provision" = 1) |>
+  count(Provision) |>
+  mutate("Level" = "As deposited")
+
+deposit_compliance <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : Deposit compliance - Digital object content and supporting metadata deposited are checked for compliance with defined criteria, e.g. digital object formats, metadata elements, and compliance with legal and ethical norms.") |>
+  rename("Provision" = 1) |>
+  count(Provision) |>
+  mutate("Level" = "Deposit compliance")
+
+inital_curation <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : Initial curation - The digital objects are curated by your repository to meet defined criteria, which may exceed those defined for Deposit Compliance.") |>
+  rename("Provision" = 1) |>
+  count(Provision) |>
+  mutate("Level" = "Initial curation")
+
+active_preservation <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : Active preservation - In addition to Deposit Compliance and Initial Curation, your repository takes long-term responsibility for ensuring that the digital objects and metadata can be understood and rendered as required by the designated community for reuse.") |>
+  rename("Provision" = 1) |>
+  count(Provision) |>
+  mutate("Level" = "Active preservation")
+
+characteristics_levels <-
+  rbind(as_deposited,
+        deposit_compliance,
+        inital_curation,
+        active_preservation)
+
+rm(as_deposited,
+   deposit_compliance,
+   inital_curation,
+   active_preservation)
+
+# Set factors
+characteristics_levels$Level <-
+  factor(
+    characteristics_levels$Level,
+    levels = c(
+      "Active preservation",
+      "Initial curation",
+      "Deposit compliance",
+      "As deposited"
+    )
+  )
+
+characteristics_levels$Provision <- 
+  factor(
+    characteristics_levels$Provision,
+    levels = c(
+      "No",
+      "Unsure",
+      "Planned",
+      "In implementation",
+      "Implemented"
+      )
+  )
+
+# Visualisation
+characteristics_levels |>
+  ggplot(aes(x = Level, y = n, fill = Provision)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = bar_chart_colours) +
+  scale_fill_manual(values = bar_chart_colours) +
+  geom_text(aes(label = n),
+  position = position_stack(vjust = .5),
+  size = 3,
+  colour = "white") +
+  labs(dictionary = c(
+    Level = "",
+    n = "",
+    Provision = "")) +
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  coord_flip()
+```
+
+**What levels of retention, curation and preservation (other than the ones listed above) has your repository implemented or is implementing?**  
+```{r characteristics other levels, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "What levels of retention, curation and preservation (other than the ones listed above) has your repository implemented or is implementing?"
+    ) |>
+    drop_na()
+)
+```
+
+***How long has your repository existed in its current form?**  
+```{r characteristics existed, echo = FALSE}
+characteristics_existed <- fidelis |>
+  select("How long has your repository existed in its current form?") |>
+    drop_na() |>
+  rename("Existed" = 1) |>
+  count(Existed) |>
+  arrange(desc(n))
+
+# Set factors
+characteristics_existed$Existed <- 
+  factor(
+    characteristics_existed$Existed,
+    levels = c(
+      "20 or more years",
+      "11–20 years",
+      "6–10 years",
+      "3–5 years",
+      "1–2 years",
+      "Less than a year",
+      "My repository is still in its planning/development stage"
+    )
+  )
+
+characteristics_existed |>
+  ggplot(aes(Existed, n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      nrow(fidelis)
+    )
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 50))
+```
+
+**What formal certification(s) does your repository have?**  
+You will be able to mention other certifications in the next question if you consider them missing here.  
+
+* CoreTrustSeal  
+* Nestor Seal (DIN 31644)  
+* ISO 16363  
+* ISO 27001  
+```{r characteristics certification, echo = FALSE}
+cts <- fidelis |>
+  select(
+    "What formal certification(s) does your repository have? You will be able to mention other certifications in the next question if you consider them missing here.: CoreTrustSeal"
+  ) |>
+  drop_na() |>
+  rename("Status" = 1) |>
+  count(Status) |>
+  mutate("Certificate" = "CoreTrustSeal")
+
+nestor <- fidelis |>
+  select(
+    "What formal certification(s) does your repository have? You will be able to mention other certifications in the next question if you consider them missing here.: Nestor Seal (DIN 31644)"
+  ) |>
+  drop_na() |>
+  rename("Status" = 1) |>
+  count(Status) |>
+  mutate("Certificate" = "Nestor")
+
+iso16363 <- fidelis |>
+  select(
+    "What formal certification(s) does your repository have? You will be able to mention other certifications in the next question if you consider them missing here.: ISO 16363"
+  ) |>
+  drop_na() |>
+  rename("Status" = 1) |>
+  count(Status) |>
+  mutate("Certificate" = "ISO16363")
+
+iso27001 <- fidelis |>
+  select(
+    "What formal certification(s) does your repository have? You will be able to mention other certifications in the next question if you consider them missing here.: ISO 27001"
+  ) |>
+  drop_na() |>
+  rename("Status" = 1) |>
+  count(Status) |>
+  mutate("Certificate" = "ISO27001")
+
+characteristics_certification <- rbind(cts, nestor, iso16363, iso27001)
+
+rm(cts, nestor, iso16363, iso27001)
+
+# Set factors
+characteristics_certification$Certificate <-
+  factor(
+    characteristics_certification$Certificate,
+    levels = c(
+      "ISO27001",
+      "ISO16363",
+      "Nestor",
+      "CoreTrustSeal"
+    )
+  )
+
+characteristics_certification$Status <- 
+  factor(
+    characteristics_certification$Status,
+    levels = c(
+      "Do not have, not interested in",
+      "Do not know/unsure",
+      "Do not have, interested in",
+      "In progress of achieving",
+      "Certified",
+      "Expired, in process of renewing",
+      "Expired, not renewing")
+  )
+
+#Visualisation
+characteristics_certification |>
+  ggplot(aes(x = Certificate, y = n, fill = Status)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = fidelis_colours) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  labs(dictionary = c(
+    Certificate = "",
+    n = "",
+    Status = "")) +
+  theme_fidelis() +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE)) +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  coord_flip()
+
+characteristics_certification |>
+  ggplot(aes(x = n, y = Status)) +
+  geom_bar(stat='identity', fill = "#FBB03B") +
+  facet_wrap(~ Certificate) +
+  scale_color_manual(values = fidelis_colours) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE)) +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+    labs(dictionary = c(
+    Certificate = "",
+    n = "",
+    Status = "")) +
+  theme_fidelis() +
+  theme(legend.position = "bottom")
+
+```
+
+**What other certification(s) does your repository have, or are relevant for your repository to achieve?**  
+For example community-specific frameworks, informal certifications/seals/schemas, or certifications related to other topics.  
+```{r characteristics certifications, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "What other certification(s) does your repository have, or are relevant for your repository to achieve? For example community-specific frameworks, informal certifications/seals/schemas, or certifications related to other topics."
+    ) |>
+    drop_na()
+)
+```
+
+## Activites and functions {#activities-functions} 
+
+FIDELIS will work towards improved harmonisation of repositories. The following section includes questions to identify gaps and needs in particular areas, services, activities, and functions where FIDELIS can provide recommendations and support.  
+
+This section will contain questions on three different topics: Digital Object Management, Organisational Infrastructure, and Technology and Security. Each topic will have some core questions and the possibility to answer additional questions.  
+
+### Digital Object Management {#digital-object}  
+The digital object management of repositories covers activities and functions carried out throughout the lifecycle of a digital object, beginning when the object is first deposited into the repository. These include, among others, appraisal and curation measures, activities to enable discovery, persistent identification, access and reuse of digital objects as well as digital preservation measures.  
+
+**To what extent does your repository face challenges and needs in terms of digital object management activities and functions?**  
+* Deposit & Appraisal  
+* Curation, Quality & Compliance  
+* Discovery & Identification  
+* Access  
+* Interoperability  
+* Preservation  
+* Provenance & Authenticity  
+* User Support  
+```{r activities_challenges, echo=FALSE}
+deposit <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Deposit & Appraisal") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Deposit and appraisal")
+
+
+curation <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Curation, Quality & Compliance") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Curation, Quality and Compliance")
+
+discovery <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Discovery & Identification") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Discovery and Identification")
+
+access <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Access") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Access")
+
+interoperability <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Interoperability") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Interoperability")
+
+preservation <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Preservation") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Preservation")
+
+provenance <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: Provenance & Authenticity") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "Provenance and authenticity")
+
+support <- 
+  fidelis |>
+  select("To what extent does your repository face challenges and needs in terms of digital object management activities and functions?: User Support") |>
+  rename("Challenge" = 1) |>
+  count(Challenge) |>
+  mutate("Activity" = "User support")  
+
+activities_challenges <- rbind(deposit, curation, discovery, access, interoperability, preservation, provenance, support)
+
+rm(deposit, curation, discovery, access, interoperability, preservation, provenance, support)
+
+# Set factors
+activities_challenges$Challenge <-
+  factor(
+    activities_challenges$Challenge,
+    levels = c(
+    "No challenges",
+    "Minor challenges",
+    "Moderate challenges",
+    "Significant challenges",
+    "Critical challenges"
+    )
+  )
+
+activities_challenges$Activity <-
+  factor(
+    activities_challenges$Activity,
+    levels = c(
+      "User support",
+      "Provenance and authenticity",
+      "Preservation",
+      "Interoperability",
+      "Access",
+      "Discovery and Identification",
+      "Curation, Quality and Compliance",
+      "Deposit and appraisal"
+    )
+  )
+  
+#Visualisation
+activities_challenges |>
+  ggplot(aes(x = Activity, y = n, fill = Challenge)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = fidelis_colours) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  labs(dictionary = c(
+    Activity = "",
+    n = "",
+    Challenge = "")) +
+       theme_fidelis() +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  coord_flip()
+```
+
+**What are the major challenges and needs your repository faces in terms of digital object management?**  
+```{r activities challenges, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "What are the major challenges and needs your repository faces in terms of digital object management?"
+    ) |>
+    rename("Challenges" = 1) |>
+    drop_na()
+)
+```
+
+**On what platforms/software does your repository operate?**  
+Select all applicable.  
+```{r activities platforms, echo=FALSE}
+activities_platforms <-
+  fidelis |>
+  select(
+    "On what platforms/software does your repository operate? Select all applicable."
+  ) |>
+  rename("Platforms" = 1) |>
+  drop_na()
+  
+responses <- nrow(activities_platforms)
+
+activities_platforms <-
+  activities_platforms |>
+  separate_wider_delim(Platforms, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Platforms")) |>
+  select(value) |>
+  rename(Platforms = value) |>
+  drop_na() |>
+  count(Platforms) |>
+  arrange(desc(n))
+
+# Visualisations
+activities_platforms |>
+  ggplot(aes(fct_reorder(Platforms, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 31))
+
+# Other responses
+kable(
+  fidelis |>
+    select("Other, namely:...44") |>
+    rename("Other platforms/software" = 1) |>
+    drop_na()
+)
+```
+
+**What technologies or services do you use to deploy the platform/software on which your repository operates?**  
+```{r activities services, echo=FALSE}
+activities_services <-
+  fidelis |>
+  select(
+    "What technologies or services do you use to deploy the platform/software on which your repository operates?"
+  ) |>
+  drop_na()
+
+responses <- nrow(activities_services)
+
+activities_services <-
+  activities_services |>
+  rename("Technology" = 1) |>
+  count(Technology) |>
+  arrange(desc(n))  
+
+# Visualisations
+activities_services |>
+  ggplot(aes(fct_reorder(Technology, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 8)
+  ) +
+  ylim(c(0, 40))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...44") |>
+        drop_na() |>
+        rename("Other technology" = 1))
+```
+
+**Does your repository use persistent identifiers (PIDs) for digital objects or metadata elements?**  
+Previously, we asked about the persistent identifiers your repository can be identified by. This question asks about persistent identifiers that can be applied to digital objects or metadata elements in your repository.  
+```{r activities PIDs, echo=FALSE}
+activities_PIDs <-
+  fidelis |>
+  select(
+    "Does your repository use persistent identifiers (PIDs) for digital objects or meatada elements?"
+  ) |>
+  drop_na()
+
+responses <- nrow(activities_PIDs)
+
+activities_PIDs <-
+  activities_PIDs |>
+  rename("PIDs" = 1) |>
+  count(PIDs) |>
+  arrange(desc(n))  
+
+# Visualisations
+activities_PIDs |>
+  ggplot(aes(fct_reorder(PIDs, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 85))
+```
+
+**Which Persistent Identifiers (PIDs) has your repository implemented or is implementing?**  
+Select all applicable.  
+
+Previously, we asked about the persistent identifiers your repository can be identified by. This question asks about persistent identifiers that can be applied to digital objects or metadata elements in your repository.  
+```{r activities PID type, echo=FALSE}
+PID_type <- fidelis |>
+  select(
+    "Which Persistent Identifiers (PIDs) has your repository implemented or is implementing? Select all applicable."
+  ) |>
+  drop_na()
+
+responses <- nrow(PID_type)
+
+PID_type <-
+  PID_type |>
+  rename("Type" = 1) |>
+  separate_wider_delim(Type, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Type")) |>
+  select(value) |>
+  rename(Type = value) |>
+  drop_na() |>
+  count(Type) |>
+  arrange(desc(n))
+
+# Visualisation
+PID_type |>
+  ggplot(aes(fct_reorder(Type, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 10)
+  ) +
+  ylim(c(0, 53))
+
+kable(fidelis |>
+        select("Other, namely:...47") |>
+        drop_na() |>
+        rename("Other PID" = 1))
+```
+
+**What are the main metadata schemas your repository uses?**  
+Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used.  
+```{r activities metadata, echo=FALSE}
+one <-
+  fidelis |>
+  select(
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 1:Metadata schema",
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 1:Purpose(s) of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+two <-
+  fidelis |>
+  select(
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 2:Metadata schema",
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 2:Purpose(s) of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+three <-
+  fidelis |>
+  select(
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 3:Metadata schema",
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 3:Purpose(s) of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+four <-
+  fidelis |>
+  select(
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 4:Metadata schema",
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 4:Purpose(s) of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+  
+five <-
+  fidelis |>
+  select(
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 5:Metadata schema",
+    "What are the main metadata schemas your repository uses? Please add up to 5 main metadata schemas, and for each schema indicate for what purpose(s) it is used. 5:Purpose(s) of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)  
+  
+activities_metadata <- rbind(one, two, three, four, five)
+
+rm(one, two, three, four, five)
+
+kable(
+  activities_metadata |>
+  filter(rowSums(is.na(activities_metadata)) != ncol(activities_metadata))
+)
+```
+
+**How are metadata schemas implemented in your repository?**  
+```{r activities schemas, echo=FALSE}
+activities_schemas <-
+  fidelis |>
+  select(
+    "How are metadata schemas implemented in your repository?"
+  ) |>
+  drop_na()
+
+responses <- nrow(activities_schemas)
+
+activities_schemas <-
+  activities_schemas |>
+  rename("Schemas" = 1) |>
+  count(Schemas) |>
+  arrange(desc(n))  
+
+# Visualisations
+activities_schemas |>
+  ggplot(aes(fct_reorder(Schemas, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 7)
+  ) +
+  ylim(c(0, 49))
+
+kable(fidelis |>
+        select("Other, namely:...59") |>
+        drop_na() |>
+        rename("Other schemas" = 1))
+```
+
+**Does your repository use semantic artefacts (e.g., controlled vocabularies, ontologies, taxonomies) to annotate, describe or index digital objects?**  
+```{r activities artefacts, echo=FALSE}
+activities_artefacts <-
+  fidelis |>
+  select("Does your repository use semantic artefacts (e.g., controlled vocabularies, ontologies, taxonomies) to annotate, describe or index digital objects?") |>
+  drop_na()
+
+responses <- nrow(activities_artefacts)
+
+activities_artefacts <-
+  activities_artefacts |>
+  rename("Artefacts" = 1) |>
+  count(Artefacts) |>
+  arrange(desc(n))  
+
+# Visualisations
+activities_artefacts |>
+  ggplot(aes(fct_reorder(Artefacts, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 71))
+```
+
+**How are semantic artefacts implemented in your repository?**  
+```{r activities artefacts use, echo=FALSE}
+activities_artefacts <-
+  fidelis |>
+  select(
+    "How are semantic artefacts implemented in your repository?"
+  ) |>
+  drop_na()
+
+responses <- nrow(activities_artefacts)
+
+activities_artefacts <-
+  activities_artefacts |>
+  rename("Implimented" = 1) |>
+  count(Implimented) |>
+  arrange(desc(n))  
+
+# Visualisations
+activities_artefacts |>
+  ggplot(aes(fct_reorder(Implimented, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all that apply")
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 8)
+  ) +
+  ylim(c(0, 37))
+
+kable(fidelis |>
+        select("Other, namely:...62") |>
+        drop_na() |>
+        rename("Other schemas" = 1))
+```
+
+**What are the main catalogues or registries your repository uses for digital object management?**  
+Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.).  
+```{r activities registries, echo=FALSE}
+one <-
+  fidelis |>
+  select(
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 1:Catalogue or Registry",
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 1:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+two <-
+  fidelis |>
+  select(
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 2:Catalogue or Registry",
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 2:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+three <-
+  fidelis |>
+  select(
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 3:Catalogue or Registry",
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 3:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+four <-
+  fidelis |>
+  select(
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 4:Catalogue or Registry",
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 4:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+five <-
+  fidelis |>
+  select(
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 5:Catalogue or Registry",
+    "What are the main catalogues or registries your repository uses for digital object management? Please add up to 5 main catalogues or registries, and for each catalogue or registry indicate for which purposes it is used, e.g., for which digital objects and metadata elements, PIDs, licenses, and/or for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 5:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+activities_registries <- rbind(one, two, three, four, five)
+
+rm(one, two, three, four, five)
+
+kable(
+  activities_registries |>
+  filter(rowSums(is.na(activities_registries)) != ncol(activities_registries))
+)
+```
+
+**What are the main shared resources or services or federated systems your repository uses for managing digital objects?**  
+Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.).  
+```{r activities resources, echo=FALSE}
+one <-
+  fidelis |>
+  select(
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 1:Shared resource, service or federated system",
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 1:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+two <-
+  fidelis |>
+  select(
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 2:Shared resource, service or federated system",
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 2:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+three <-
+  fidelis |>
+  select(
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 3:Shared resource, service or federated system",
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 3:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+four <-
+  fidelis |>
+  select(
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 4:Shared resource, service or federated system",
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 4:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+five <-
+  fidelis |>
+  select(
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 5:Shared resource, service or federated system",
+    "What are the main shared resources or services or federated systems your repository uses for managing digital objects? Please add up to 5 main resources, and indicate for each of them for which purposes it is used, e.g., for which Activity/Function (e.g., Deposit & Appraisal, Curation, Quality & Compliance, Access, Reuse, Preservation, etc.). 5:Purpose of use"
+  ) |>
+  rename("Schema" = 1, "Purpose" = 2)
+
+activities_resources <- rbind(one, two, three, four, five)
+
+rm(one, two, three, four, five)
+
+kable(activities_resources |>
+        filter(rowSums(is.na(
+          activities_resources
+        )) != ncol(activities_resources)))
+```
+
+
+### Organisational Infrastructure {#organisational-infrastructure}  
+A repository’s mission and scope, its governance and legal framework, as well as available resources, skills, and expertise directly impact digital object management. Organisational Activities and Functions such as managing standards and policies, research and development, engaging with external stakeholders and collaborating third parties need to be considered in this context.
+
+**To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?**
+
+* Mission & Scope  
+* Governance  
+* Resources  
+* Continuity of Service  
+* People & Expertise  
+* External Engagement  
+* Community Watch  
+* Release & Publishing  
+* Legal & Ethical  
+* Policy & Standards  
+* Management  
+* Criteria, Assessment, Improvement  
+* Analysis & Impact  
+* Rights Management  
+* Training  
+* Research & Development  
+* Third Party Dependencies  
+```{r infrastructure challenges, echo=FALSE}
+mission <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Mission & Scope"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Mission and scope")
+
+governance <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Governance"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Governance")
+
+resources <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Resources"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Resources")
+
+continuity <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Continuity of Service"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Continuity of service")
+
+people <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: People & Expertise"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "People and expertise")
+
+external <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: External Engagement"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "External engagement")
+
+community <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Community Watch"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Community watch")
+
+publishing <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Release & Publishing"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Release and publishing")
+
+legal <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Legal & Ethical"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Legal and ethical")
+
+policy <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Policy & Standards Management"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Policy standards and management")
+
+criteria <- fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Criteria, Assessment, Improvement"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Criteria, assessment, improvement")
+
+analysis <- fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Analysis & Impact"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Analysis and impact")
+
+rights <-  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Rights Management"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Rights management")
+
+training <-  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Training"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Training")
+
+research <-  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Research & Development"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Research and development")
+
+dependencies <-  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of organisational infrastructure activities and functions?: Third Party Dependencies"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "3rd party dependencies")
+
+infrastructure_challenges <- rbind(
+  mission,
+  governance,
+  resources,
+  continuity,
+  people,
+  external,
+  community,
+  publishing,
+  legal,
+  policy,
+  criteria,
+  analysis,
+  rights,
+  training,
+  research,
+  dependencies
+)
+
+rm(
+  mission,
+  governance,
+  resources,
+  continuity,
+  people,
+  external,
+  community,
+  publishing,
+  legal,
+  policy,
+  criteria,
+  analysis,
+  rights,
+  training,
+  research,
+  dependencies
+)
+
+# Set factors
+infrastructure_challenges$Extent <-
+  factor(
+    infrastructure_challenges$Extent,
+    levels = c(
+      "No challenges",
+      "Minor challenges",
+      "Moderate challenges",
+      "Significant challenges",
+      "Critical challenges"
+    )
+  )
+
+infrastructure_challenges$Challenge <-
+  factor(
+    infrastructure_challenges$Challenge,
+    levels = c(
+      "3rd party dependencies",
+      "Research and development",
+      "Training",
+      "Rights management",
+      "Analysis and impact",
+      "Criteria, assessment, improvement",
+      "Policy standards and management",
+      "Legal and ethical",
+      "Release and publishing",
+      "Community watch",
+      "External engagement",
+      "People and expertise",
+      "Continuity of service",
+      "Resources",
+      "Governance",
+      "Mission and scope"
+    )
+  )
+
+#Visualisation
+infrastructure_challenges |>
+  ggplot(aes(x = Challenge, y = n, fill = Extent)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = fidelis_colours) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+   labs(dictionary = c(
+     Challenge = "",
+     n = "",
+     Extent = "")) +
+       theme_fidelis() +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  coord_flip()
+
+# Other responses
+kable(fidelis |>
+        select("What are the major challenges and needs your repository faces in terms of organisational infrastructure?") |>
+        drop_na() |>
+        rename("Other challenges" = 1))
+```
+
+**For the reuse of metadata, which license(s) does your repository apply?**  
+```{r infrastructure metadata licence, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "For the reuse of metadata, which license(s) does your repository apply?"
+    ) |>
+    rename("Licence" = 1) |>
+    drop_na() |>
+    count(Licence) |>
+    arrange(desc(n))
+)
+```
+
+**For the reuse of data, which license(s) does your repository apply?**  
+```{r infrastructure reuse licence, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "For the reuse of data, which license(s) does your repository apply?"
+    ) |>
+    rename("Licence" = 1) |>
+    drop_na() |>
+    count(Licence) |>
+    arrange(desc(n))
+)
+```
+
+**For the reuse of code/software, which license(s) does your repository apply?**  
+```{r infrastructure code licence, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "For the reuse of code/software, which license(s) does your repository apply?"
+    ) |>
+    rename("Licence" = 1) |>
+    drop_na() |>
+    count(Licence) |>
+    arrange(desc(n))
+)
+```
+
+**For the reuse of digital objects other than metadata, data or code/software, which license(s) does your repository apply?**  
+Please specify the type of digital object and the license(s).  
+```{r infrastructure licence, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "For the reuse of digital objects other than metadata, data or code/software, which license(s) does your repository apply? Please specify the type of digital object and the license(s)."
+    ) |>
+    rename("Licence" = 1) |>
+    drop_na()
+)
+```
+
+**Does your repository have a continuity agreement with another organisation(s) to ensure ongoing access to and preservation of your digital objects and metadata?**  
+```{r infrastructure continuity, echo=FALSE}
+characteristics_levels <-
+  fidelis |>
+  select("Does your repository have a continuity agreement with another organisation(s) to ensure ongoing access to and preservation of your digital objects and metadata?") |>
+  rename("Agreement" = 1) |>
+  drop_na()
+
+responses <- nrow(characteristics_levels)
+
+characteristics_levels <-
+  characteristics_levels |>
+  count(Agreement)
+
+# Set factors
+characteristics_levels$Agreement <- 
+  factor(
+    characteristics_levels$Agreement,
+    levels = c(
+      "No",
+      "Unsure",
+      "Planned",
+      "In implementation",
+      "Implemented"
+      )
+  )
+
+# Visualisation
+characteristics_levels |>
+  ggplot(aes(Agreement, n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses)
+    ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 28))
+```
+
+**If you have implemented or are implementing a continuity agreement, what type of organisation(s) is the agreement with?**  
+```{r infrastructure continuity type, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "If you have implemented or are implementing a continuity agreement, what type of organisation(s) is the agreement with?"
+    ) |>
+    drop_na() |>
+    rename("Type" = 1)
+)
+```
+
+**To what extent does your repository have sustainable funding to carry out your mission?**  
+Please select the option that best describes the typical duration of funding allocation for your repository.  
+```{r infrastructure funding, echo=FALSE}
+infrastructure_funding <-
+  fidelis |>
+  select("To what extent does your repository have sustainable funding to carry out your mission? Please select the option that best describes the typical duration of funding allocation for your repository.") |>
+  rename("Duration" = 1) |>
+  drop_na()
+
+responses <- nrow(infrastructure_funding)
+
+infrastructure_funding <-
+  infrastructure_funding |>
+  count(Duration)
+
+# Set factors
+infrastructure_funding$Duration <- 
+  factor(
+    infrastructure_funding$Duration,
+    levels = c(
+      "More than 10 years",
+      "6-10 years",
+      "2-5 years",
+      "1 year at a time",
+      "Unsure",
+      "Other"
+    )
+  )
+
+infrastructure_funding |>
+  ggplot(aes(Duration, n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      responses
+    )
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 30))
+
+```
+
+Other, namely: How would you describe the extent to which your repository has sustainable funding to carry out your mission?  
+```{r infrastructure sustrain, echo=FALSE}
+kable(
+  fidelis |>
+    select("Other, namely:...108") |>
+    drop_na() |>
+    rename("Other sustainability" = 1)
+)
+```
+
+**What are the main funding sources of your repository?**  
+Select all applicable.  
+```{r infrastructure funding sources, echo=FALSE}
+infrastructure_funding_sources <-
+  fidelis |>
+  select("What are the main funding sources of your repository? Select all applicable.") |>
+  rename("Sources" = 1) |>
+  drop_na()
+
+responses <- nrow(infrastructure_funding_sources)
+
+infrastructure_funding_sources <-
+  infrastructure_funding_sources |>
+  separate_wider_delim(Sources, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Sources")) |>
+  select(value) |>
+  rename(Sources = value) |>
+  count(Sources) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+infrastructure_funding_sources |>
+  ggplot(aes(fct_reorder(Sources, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(50)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 11)
+  ) +
+  ylim(c(0, 54))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...110") |>
+        drop_na() |>
+        rename("Other sources" = 1))
+```
+
+### Technology and Security {#technology-security}
+The technology and security management of repositories ensures that any digital objects handled by the repository are securely stored and transmitted via reliable technical infrastructure, and that relevant changes in the technological environment are monitored and acted upon.
+
+**To what extent does your repository face challenges and needs in terms of technology and security activities and functions?**  
+
+* Storage & Integrity  
+* Technical Infrastructure  
+* Tech Watch  
+* Sensitive data management  
+* Security  
+```{r technology challenges, echo=FALSE}
+storage <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of technology and security activities and functions?: Storage & Integrity"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Storage and integrity")
+
+infrastructure <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of technology and security activities and functions?: Technical Infrastructure"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Technical infrastructure")
+
+tech <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of technology and security activities and functions?: Tech Watch"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Tech watch")
+
+sensitive <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of technology and security activities and functions?: Sensitive data management"
+  )  |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Sensitive data management")
+
+security <-
+  fidelis |>
+  select(
+    "To what extent does your repository face challenges and needs in terms of technology and security activities and functions?: Security"
+  ) |>
+  rename("Extent" = 1) |>
+  count(Extent) |>
+  mutate("Challenge" = "Security")
+
+technology_challenges <- rbind(storage, infrastructure, tech, sensitive, security)
+
+rm(storage, infrastructure, tech, sensitive, security)
+
+# Set factors
+technology_challenges$Extent <-
+  factor(
+    technology_challenges$Extent,
+    levels = c(
+      "No challenges",
+      "Minor challenges",
+      "Moderate challenges",
+      "Significant challenges",
+      "Critical challenges"
+    )
+  )
+
+technology_challenges$Challenge <-
+  factor(
+    technology_challenges$Challenge,
+    levels = c(
+      "Security",
+      "Sensitive data management",
+      "Tech watch",
+      "Technical infrastructure",
+      "Storage and integrity"
+    )
+  )
+
+#Visualisation
+technology_challenges |>
+  ggplot(aes(x = Challenge, y = n, fill = Extent)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = bar_chart_colours) +
+  scale_fill_manual(values = bar_chart_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  labs(dictionary = c(
+    Challenge = "",
+    n = "",
+    Extent = "")) +
+  theme_fidelis() +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  coord_flip()
+```
+
+**What are the major challenges and needs your repository faces in terms of technology and security?**  
+```{r technology needs, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "What are the major challenges and needs your repository faces in terms of technology and security?"
+    ) |>
+    drop_na() |>
+    rename("Other challenges" = 1)
+)
+```
+
+**What processes and/or documentation does your repository use to ensure appropriate digital object and metadata storage and integrity?**  
+Select all applicable.  
+```{r technology processes, echo=FALSE}
+technology_processes <-
+  fidelis |>
+  select("What processes and/or documentation does your repository use to ensure appropriate digital object and metadata storage and integrity? Select all applicable.") |>
+    rename("Process" = 1) |>
+  drop_na()
+
+responses <- nrow(technology_processes)
+
+technology_processes <-
+  technology_processes |>
+  separate_wider_delim(Process, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Process")) |>
+  select(value) |>
+  rename(Process = value) |>
+  count(Process) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+technology_processes |>
+  ggplot(aes(fct_reorder(Process, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(50)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 57))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...119") |>
+        drop_na() |>
+        rename("Other Topics" = 1))
+```
+
+**What (other) main standards, best practices and solutions does your repository use for its technology and security management?**  
+Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used.
+```{r technology standards, echo=FALSE}
+one <-
+  fidelis |>
+  select(
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 1:Standard, best practice or solution",
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 1:Purpose(s) of use"
+  ) |>
+  rename("Standard" = 1, "Purpose" = 2)
+
+two <-
+  fidelis |>
+  select(
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 2:Standard, best practice or solution",
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 2:Purpose(s) of use"
+  ) |>
+  rename("Standard" = 1, "Purpose" = 2)
+
+three <-
+  fidelis |>
+  select(
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 3:Standard, best practice or solution",
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 3:Purpose(s) of use"
+  ) |>
+  rename("Standard" = 1, "Purpose" = 2)
+
+four <-
+  fidelis |>
+  select(
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 4:Standard, best practice or solution",
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 4:Purpose(s) of use"
+  ) |>
+  rename("Standard" = 1, "Purpose" = 2)
+  
+five <-
+  fidelis |>
+  select(
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 5:Standard, best practice or solution",
+    "What (other) main standards, best practices and solutions does your repository use for its technology and security management? Please add up to 5 main standards, best practices and solutions and indicate for what purpose it is used. 5:Purpose(s) of use"
+  ) |>
+  rename("Standard" = 1, "Purpose" = 2)  
+  
+technology_standards <- rbind(one, two, three, four, five)
+
+rm(one, two, three, four, five)
+
+kable(
+  technology_standards |>
+  filter(rowSums(is.na(technology_standards)) != ncol(technology_standards))
+)
+```
+
+## Training and support needs {#training-support}
+
+FIDELIS will offer different support and training mechanisms for repositories. To ensure our training strategy will align with the needs of the community, we would appreciate your input on the following questions.
+
+**Which of these topics have you previously received training or support on?**  
+Select all applicable.  
+```{r training topics recived, echo = FALSE}
+training_topics_recived <-
+  fidelis |>
+  select("Which of these topics have you previously received training or support on? Select all applicable.") |>
+    rename("Topic" = 1) |>
+  drop_na()
+
+responses <- nrow(training_topics_recived)
+
+training_topics_recived <-
+  training_topics_recived |>
+  separate_wider_delim(Topic, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Topic")) |>
+  select(value) |>
+  rename(Topic = value) |>
+  count(Topic) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+training_topics_recived |>
+  ggplot(aes(fct_reorder(Topic, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(50)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 110))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...133") |>
+        drop_na() |>
+        rename("Other Topics" = 1))
+```
+
+**Where do you currently (or have you previously) find/receive training on topics related to Trustworthy Digital Repositories?**  
+Select all applicable.  
+```{r training find, echo = FALSE}
+training_find <-
+  fidelis |>
+  select(
+    "Where do you currently (or have you previously) find/receive training on topics related to Trustworthy Digital Repositories? Select all applicable."
+  ) |>
+  rename("Source" = 1) |>
+  drop_na()
+
+responses <- nrow(training_find)
+
+training_find <-
+  training_find |>
+  separate_wider_delim(Source, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Source")) |>
+  select(value) |>
+  rename(Source = value) |>
+  count(Source) |>
+  drop_na() |>
+  arrange(desc(n))
+
+training_find <-
+  training_find |>
+  mutate(
+    Source = recode(
+      Source,
+      "In specific communities I am part of (e.g. CESSDA, ELIXIR, RDA)" = "Part of specific communities",
+      "From peers – (inter)nationally" = "Peers",
+      "European project-based training initiatives (e.g. EOSC-Nordic, FAIRsFAIR, FAIR-IMPACT)" = "European projects",
+      "At my host institution – from my peers" =  "Host institution (peers)",
+      "Offerings available online" = "Online", "National training initiatives" = "National initatives",
+      "International training initiatives (e.g. COAR)" = "International initatiotives",
+      "At my host institution – formally offered training" = "Host institution",
+      "Nowhere / I am not aware of any training opportunities related to Trustworthy Digital Repositories" = "Nowhere/Not aware"
+    )
+  )
+
+# Visualisation
+training_find |>
+  ggplot(aes(fct_reorder(Source, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      responses,
+      ", respondents could select all applicable options."
+    )
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 80))
+```
+
+**Which format(s) of training or support have you previously experienced?**  
+Select all applicable.  
+```{r training format, echo = FALSE}
+training_format <-
+  fidelis |>
+  select("Which format(s) of training or support have you previously experienced? Select all applicable.") |>
+  rename("Format" = 1) |>
+  drop_na()
+
+responses <- nrow(training_format)
+
+training_format <-
+  training_format |>
+  separate_wider_delim(Format, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Format")) |>
+  select(value) |>
+  rename(Format = value) |>
+  count(Format) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+training_format |>
+  ggplot(aes(fct_reorder(Format, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 140))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...135") |>
+        rename("Other format" =  1) |>
+        drop_na())
+```
+
+**Was the training and/or support you have previously received sufficient for your needs? If not, what was missing from the experience?**  
+```{r training sufficent, echo = FALSE}
+kable(
+  fidelis |>
+    select(
+      "Was the training and/or support you have previously received sufficient for your needs? If not, what was missing from the experience?"
+    ) |>
+    rename("Training sufficient" = 1) |>
+    drop_na()
+)
+```
+
+***Which of these topics would you be interested in receiving (more) training or support on?**  
+Select all applicable.  
+```{r training topics, echo = FALSE}
+training_topics <-
+  fidelis |>
+  select("Which of these topics would you be interested in receiving (more) training or support on? Select all applicable.") |>
+  rename("Topic" = 1) |>
+  drop_na()
+
+responses <- nrow(training_topics)
+
+training_topics <-
+  training_topics |>
+  separate_wider_delim(Topic, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Topic")) |>
+  select(value) |>
+  rename(Topic = value) |>
+  count(Topic) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+training_topics |>
+  ggplot(aes(fct_reorder(Topic, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 83))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...140") |>
+        rename("Other format" =  1) |>
+        drop_na())
+```
+
+**Which format(s) of training or support would you like to receive?**  
+Select all applicable.  
+```{r training support, echo = FALSE}
+training_support <-
+  fidelis |>
+  select("Which format(s) of training or support would you like to receive? Select all applicable.") |>
+  rename("Format" = 1) |>
+  drop_na()
+
+responses <- nrow(training_support)
+
+training_support <-
+  training_support |>
+  separate_wider_delim(Format, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Format")) |>
+  select(value) |>
+  rename(Format = value) |>
+  count(Format) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+training_support |>
+  ggplot(aes(fct_reorder(Format, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 115))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...140") |>
+        rename("Other format" =  1) |>
+        drop_na())
+```
+
+**Please indicate how much you agree or disagree with the following statements:**  
+
+* I am more likely to join a training or support activity if I will receive a digital badge or formally recognised certificate at the end of it.  
+* I want training to result in a tangible product I have created.  
+* I want to have achieved a specific objective or outcome by the end of training.  
+* My organisation encourages me to join training and support activities.  
+* I prefer multiple shorter activities (e.g. max. 2 hours) over one long activity (e.g. a full day).  
+* I want to train at my own pace.  
+* I want to learn on my own.  
+* I want learning opportunities with peer engagement.  
+```{r training join, echo = FALSE}
+certificate <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I am more likely to join a training or support activity if I will receive a digital badge or formally recognised certificate at the end of it."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Recieve badge or certificate")
+
+tangible <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I want training to result in a tangible product I have created."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Create tangible product")
+
+objective <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I want to have achieved a specific objective or outcome by the end of training."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Achieve objective/outcome")
+
+encourage <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: My organisation encourages me to join training and support activities."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "My orginisation encourages")
+
+short <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I prefer multiple shorter activities (e.g. max. 2 hours) over one long activity (e.g. a full day)."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Prefer short activities")
+
+pace <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I want to train at my own pace."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Train at own pace")
+
+own <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I want to learn on my own."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Learn on own")
+
+peer <- fidelis |>
+  select(
+    "Please indicate how much you agree or disagree with the following statements:: I want learning opportunities with peer engagement."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Opportunities with peer engagement")
+
+training_join <- rbind(certificate, tangible, objective, encourage, short, pace, own, peer)
+
+rm(certificate, tangible, objective, encourage, short, pace, own, peer)
+
+# Set factors
+training_join$Statement <-
+  factor(
+    training_join$Statement,
+    levels = c(
+      "Opportunities with peer engagement",
+      "Learn on own",
+      "Train at own pace",
+      "Prefer short activities",
+      "My orginisation encourages",
+      "Achieve objective/outcome",
+      "Create tangible product",
+      "Recieve badge or certificate"
+    )
+  )
+
+training_join$Indicate <- 
+  factor(
+    training_join$Indicate,
+    levels = c(
+      "Strongly disagree",
+      "Disagree",
+      "Neither agree nor disagree",
+      "Agree",
+      "Strongly agree"
+      )
+  )
+
+# Visualisation
+training_join |>
+  ggplot(aes(x = Statement, y = n, fill = Indicate)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = bar_chart_colours) +
+  scale_fill_manual(values = bar_chart_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  labs(dictionary = c(
+  Statement = "",
+  Indicate  = "",
+  n = "")) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +  
+  coord_flip()
+```
+
+**Please indicate how important you find the following aspects of a training or support activity:**  
+* The activity does not take up too much of my time.  
+* The ability to connect with, learn from, and network with fellow participants, organisers, (guest) speakers, and other experts.  
+* The activity covers a topic that is new and cutting-edge.  
+* The activity allows me to join as part of a team with my colleagues.  
+* The activity consists of a mix of different teaching formats (e.g. lectures, workshops, peer collaboration, flipped classroom, etc.).  
+* The activity allows me to become familiar with a topic (i.e. beginner level, not too advanced).  
+* The activity allows me to dive deeper (i.e. more advanced level, not beginner level).  
+```{r training important, echo=FALSE}
+time <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The activity does not take up too much of my time."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Doesn't take up time")
+
+connect <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The ability to connect with, learn from, and network with fellow participants, organisers, (guest) speakers, and other experts."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Connect with others")
+
+new <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The activity covers a topic that is new and cutting-edge."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "New topic")
+
+team <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The activity allows me to join as part of a team with my colleagues."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Part of a team")
+
+mix <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The activity consists of a mix of different teaching formats (e.g. lectures, workshops, peer collaboration, flipped classroom, etc.)."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Mix of formats")
+
+beginner <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The activity allows me to become familiar with a topic (i.e. beginner level, not too advanced)."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Beginner level")
+
+advanced <- fidelis |>
+  select(
+    "Please indicate how important you find the following aspects of a training or support activity:: The activity allows me to dive deeper (i.e. more advanced level, not beginner level)."
+  ) |>
+  drop_na() |>
+  rename("Indicate" = 1) |>
+  count(Indicate) |>
+  mutate("Statement" = "Advanced level")
+
+training_important <- rbind(time, connect, new, team, mix, beginner, advanced)
+
+rm(time, connect, new, team, mix, beginner, advanced)
+
+# Set factors
+training_important$Statement <-
+  factor(
+    training_important$Statement,
+    levels = c(
+      "Advanced level",
+      "Beginner level",
+      "Mix of formats", 
+      "Part of a team",
+      "New topic",
+      "Connect with others",
+      "Doesn't take up time"
+      )
+    )
+
+training_important$Indicate <- 
+  factor(
+    training_important$Indicate,
+    levels = c(
+      "Not important at all",
+      "Slightly unimportant",
+      "Neutral",
+      "Slightly important",
+      "Very important"
+      )
+  )
+
+# Visualisation
+training_important |>
+  ggplot(aes(x = Statement, y = n, fill = Indicate)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = bar_chart_colours) +
+  scale_fill_manual(values = bar_chart_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  labs(dictionary = c(
+    Statement = "",
+    n = "",
+    Indicate = "")) +
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +  
+  coord_flip()
+```
+
+
+FIDELIS will organise different training and support activities.  
+* Open training: (online) webinars or workshops that are free for all to join. These can cover different kinds of topics.  
+* Support for the adoption of solutions: a combination of financial support and expert guidance to implement and adopt good practices, tools, and services that can increase your repository trustworthiness.  
+* Mentoring: this programme will bring together peers in the community for support between mentors with knowledge on a certain topic and mentees who would like to learn more about it.  
+
+**How likely do you currently think it is that you would join or apply for each activity?**  
+
+* Open training on technical topics  
+* Open training on repository management and governance topics  
+* Open training on legal topics  
+* Support for the adoption of solutions  
+* Mentoring programme – as a mentor  
+* Mentoring programme – as a mentee  
+```{r training likely, echo=FALSE}
+technical <- fidelis |>
+  select("How likely do you currently think it is that you would join or apply for each activity?: Open training on technical topics") |>
+  drop_na() |>
+  rename("Intent" = 1) |>
+  count(Intent) |>
+  mutate("Topic" = "Technical topics")
+
+management <- fidelis |>
+  select(
+    "How likely do you currently think it is that you would join or apply for each activity?: Open training on repository management and governance topics"
+  ) |>
+  drop_na() |>
+  rename("Intent" = 1) |>
+  count(Intent) |>
+  mutate("Topic" = "Management and governance")
+
+legal <- fidelis |>
+  select(
+    "How likely do you currently think it is that you would join or apply for each activity?: Open training on legal topics"
+  ) |>
+  drop_na() |>
+  rename("Intent" = 1) |>
+  count(Intent) |>
+  mutate("Topic" = "Legal topics")
+
+adoption <- fidelis |>
+  select(
+    "How likely do you currently think it is that you would join or apply for each activity?: Support for the adoption of solutions"
+  ) |>
+  drop_na() |>
+  rename("Intent" = 1) |>
+  count(Intent) |>
+  mutate("Topic" = "Adoption of solutions")
+
+mentor <- fidelis |>
+  select(
+    "How likely do you currently think it is that you would join or apply for each activity?: Mentoring programme – as a mentor"
+  ) |>
+  drop_na() |>
+  rename("Intent" = 1) |>
+  count(Intent) |>
+  mutate("Topic" = "As mentor")
+
+mentee <- fidelis |>
+  select(
+    "How likely do you currently think it is that you would join or apply for each activity?: Mentoring programme – as a mentee"
+    ) |>
+  drop_na() |>
+  rename("Intent" = 1) |>
+  count(Intent) |>
+  mutate("Topic" = "As mentee")
+
+training_likely <- rbind(technical, management, legal, adoption, mentor, mentee)
+
+rm(technical, management, legal, adoption, mentor, mentee)
+
+# Set factors
+training_likely$Topic <-
+  factor(
+    training_likely$Topic,
+    levels = c(
+      "Technical topics",
+      "Management and governance",
+      "Legal topics",
+      "Adoption of solutions",
+      "As mentor",
+      "As mentee"
+    )
+  )
+
+training_likely$Topic <-
+  factor(
+    training_likely$Topic,
+    levels = c(
+      "As mentee",
+      "As mentor",
+      "Adoption of solutions",
+      "Legal topics",
+      "Management and governance",
+      "Technical topics"
+    )
+  )
+
+training_likely$Intent <- 
+  factor(
+    training_likely$Intent,
+    levels = c(
+      "Very unlikely",
+      "Unlikely",
+      "Neither likely nor unlikely",
+      "Likely",
+      "Very likely"
+      )
+  )
+
+# Visualisation
+training_likely |>
+  ggplot(aes(x = Topic, y = n, fill = Intent)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = bar_chart_colours) +
+  scale_fill_manual(values = bar_chart_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  labs(dictionary = c(
+    Topic = "",
+    n = "",
+    Intent = "")) +
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +  
+  coord_flip()
+```
+
+***Please elaborate on your choices. Why would you (not) apply for these activities?**
+```{r training elaborate, echo=FALSE}
+kable(fidelis |>
+  select("Please elaborate on your choices. Why would you (not) apply for these activities?") |>
+  rename("Training elaborate" = 1) |>
+  drop_na())
+```
+
+## Legal challenges {#legal-challenges}
+FIDELIS will offer support to increase understanding of common legal issues and requirements that Trustworthy Digital Repositories face. This section is designed to gather initial input on the topic to design meaningful support for the community.  
+
+**Do you or someone in your repository (or host institution) have expertise on any of the following topics?**  
+* GDPR  
+* Copyright / Intellectual Property Rights  
+* Open Access and Open Science Policies  
+* Research Ethics  
+* Data Governance and Data Security  
+* International Agreements and Collaboration  
+* Liability and Indemnity  
+* Freedom of Information  
+* Competition Law  
+* Contract Law  
+```{r legal expertise, echo=FALSE}
+gdpr <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : GDPR"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "GDPR")
+
+copyright <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Copyright / Intellectual Property Rights"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "Copyright/IPR")
+
+policies <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Open Access and Open Science Policies"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "OA and OS policies")
+
+ethics <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Research Ethics"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "Research ethics")
+
+security <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Data Governance and Data Security"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "Data governance and security")
+
+agreements <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : International Agreements and Collaboration"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "International agreements and collaboration")
+
+liability <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Liability and Indemnity"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "Liability and indemnity")
+
+foi <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Freedom of Information Laws"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "FOI")
+
+
+competition <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Competition Law"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "Competition law")
+
+
+contract <-
+  fidelis |>
+  select(
+    "Do you or someone in your repository (or host institution) have expertise on any of the following topics? : Contract Law"
+  ) |>
+  drop_na() |>
+  rename("Expertise" = 1) |>
+  count(Expertise) |>
+  mutate("Topic" = "Contract law")
+
+legal_expertise <- rbind(gdpr, copyright, policies, ethics, security, agreements, liability, foi, competition, contract)
+
+rm(gdpr, copyright, policies, ethics, security, agreements, liability, foi, competition, contract)
+
+# Set factors
+legal_expertise$Topic <-
+  factor(
+    legal_expertise$Topic,
+    levels = c(
+      "Contract law",
+      "Competition law",
+      "FOI",
+      "Liability and indemnity",
+      "International agreements and collaboration",
+      "Data governance and security",
+      "Research ethics",
+      "OA and OS policies",
+      "Copyright/IPR",
+      "GDPR"
+    )
+  )
+
+legal_expertise$Expertise <-
+  factor(
+    legal_expertise$Expertise,
+    levels = c(
+      "No, we are not interested in this topic",
+      "No, we could use support on this topic",
+      "Yes, we have expertise on this topic"
+    )
+  )
+
+# Visualisation
+legal_expertise |>
+  ggplot(aes(x = Topic, y = n, fill = Expertise)) +
+  geom_bar(stat = "identity") +
+  scale_color_manual(values = fidelis_colours) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = n),
+    position = position_stack(vjust = .5),
+    size = 3,
+    colour = "white"
+  ) +
+  labs(dictionary = c(
+    Level = "",
+    n = "",
+    Provision = "")) +
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.line.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +  
+  coord_flip()
+
+# Other responses
+kable(
+  fidelis |>
+    select(
+      "Other, namely:...174"
+    ) |>
+    rename("Other expertise" = 1) |>
+    drop_na()
+)
+```
+
+**Does your repository already have experience collaborating with other countries or institutions across borders on legal issues?**  
+```{r legal collaboration experience, echo=FALSE}
+collaboration_experience <-
+  fidelis |>
+    select(
+      "Does your repository already have experience collaborating with other countries or institutions across borders on legal issues?"
+    ) |>
+    rename("Experience" = 1) |>
+    drop_na() |>
+  count(Experience) |>
+  arrange(desc(n))
+
+# Visualisation
+collaboration_experience |>
+  ggplot(aes(x = "", y = n, fill = Experience)) +
+  geom_bar(stat = "identity", width = .425) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = paste0(n, "\n", Experience)),
+    family = "Calibri",
+    position = position_stack(vjust = .5),
+    size = 5,
+    colour = "white"
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", sum(collaboration_experience$n))
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  coord_flip()
+```
+
+**Please list who you collaborate with and the legal topics involved.**  
+```{r legal collaborators, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "Please list who you collaborate with and the legal topics involved."
+    ) |>
+    rename("Collaborate" = 1) |>
+    drop_na()
+)
+```
+
+**What would you say are the biggest legal challenges your repository faces when sharing data between repositories or with scientists from other research organisations?**  
+Select all applicable.  
+
+```{r leagl challenges, echo=FALSE}
+leagl_challenges <-
+  fidelis |>
+  select(
+    "What would you say are the biggest legal challenges your repository faces when sharing data between repositories or with scientists from other research organisations? Select all applicable."
+  ) |>
+  rename("Challenges" = 1) |>
+  drop_na()
+
+responses <- nrow(leagl_challenges)
+
+leagl_challenges <-
+  leagl_challenges |>
+  separate_wider_delim(Challenges, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Challenges")) |>
+  select(value) |>
+  rename(Challenges = value) |>
+  count(Challenges) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+leagl_challenges |>
+  ggplot(aes(fct_reorder(Challenges, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      responses,
+      ", respondents could select all applicable options."
+    )
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 80))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...178") |>
+        rename("Other challenges" =  1) |>
+        drop_na())
+```
+
+**Would your repository be interested in collaborating on frameworks and guidelines regarding GDPR and/or Intellectual Property Rights with others in the network? Why (not)?**  
+```{r legal gdpr collaboration, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "Would your repository be interested in collaborating on frameworks and guidelines regarding GDPR and/or Intellectual Property Rights with others in the network? Why (not)?"
+    ) |>
+    drop_na() |>
+    rename("Interest" = 1)
+)
+```
+
+**Does your repository have clear legal frameworks, policies and guidelines for handling personal data in accordance with GDPR and other relevant data protection laws?**  
+```{r legal gdpr, echo=FALSE}
+legal_gdpr <-
+  fidelis |>
+  select(
+    "Does your repository have clear legal frameworks, policies and guidelines for handling personal data in accordance with GDPR and other relevant data protection laws?"
+  ) |>
+  rename("Framework" = 1) |>
+  drop_na() |>
+  count(Framework) |>
+  arrange(desc(n))
+
+# Visualisation
+legal_gdpr |>
+  ggplot(aes(x = "", y = n, fill = Framework)) +
+  geom_bar(stat = "identity", width = .425) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = paste0(n, "\n", Framework)),
+    family = "Calibri",
+    position = position_stack(vjust = .5),
+    size = 5,
+    colour = "white"
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", sum(legal_gdpr$n))
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  coord_flip()
+```
+
+**Does your repository have clear frameworks and guidelines for sharing data within Europe?**  
+```{r legal sharing, echo=FALSE}
+legal_sharing <-
+  fidelis |>
+  select(
+    "Does your repository have clear frameworks and guidelines for sharing data within Europe?"
+  ) |>
+  rename("Framework" = 1) |>
+  drop_na() |>
+  count(Framework) |>
+  arrange(desc(n))
+
+# Visualisation
+legal_sharing |>
+  ggplot(aes(x = "", y = n, fill = Framework)) +
+  geom_bar(stat = "identity", width = .425) +
+  scale_fill_manual(values = fidelis_colours) +
+  geom_text(
+    aes(label = paste0(n, "\n", Framework)),
+    family = "Calibri",
+    position = position_stack(vjust = .5),
+    size = 5,
+    colour = "white"
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", sum(legal_sharing$n))
+  ) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  coord_flip()
+```
+
+**Does your repository follow one or several specific legal metadata standards for data governance and compliance?**  
+Select all applicable.  
+A common standard will simplify sharing, accessing, and using research data across different legal jurisdictions and institutions while ensuring compliance with relevant laws, regulations, and policies (legal interoperability).  
+```{r legal metadata, echo=FALSE}
+legal_metadata <-
+  fidelis |>
+  select(
+    "Does your repository follow one or several specific legal metadata standards for data governance and compliance? Select all applicable."
+  ) |>
+  rename("Standard" = 1) |>
+  drop_na()
+
+responses <- nrow(legal_metadata)
+
+legal_metadata <-
+  legal_metadata |>
+  separate_wider_delim(Standard, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Standard")) |>
+  select(value) |>
+  rename(Standard = value) |>
+  count(Standard) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+legal_metadata |>
+  ggplot(aes(fct_reorder(Standard, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0(
+      "n =",
+      responses,
+      ", respondents could select all applicable options."
+    )
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 40))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...184") |>
+        drop_na() |>
+        rename("Other standard" = 1))
+```
+
+**Would your repository be open to change to/adopt/add another core metadata schema if that would improve legal interoperability? Why (not)?**  
+```{r legal interoprability, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "Would your repository be open to change to/adopt/add another core metadata schema if that would improve legal interoperability? Why (not)?"
+    ) |>
+    drop_na() |>
+    rename("Why (not)?" = 1)
+)
+```
+
+**What workflows does your repository have in place for ensuring legal interoperability?**  
+```{r legal workflows, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "What workflows does your repository have in place for ensuring legal interoperability?"
+    ) |>
+    drop_na() |>
+    rename("Workflows" = 1)
+)
+```
+
+**How does your repository manage rights and licences for deposited content?**  
+For example, imposing a single licence, offering licence selection, providing licensing guidance for contributors, etc.  
+```{r legal licences, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "How does your repository manage rights and licences for deposited content?"
+    ) |>
+    drop_na() |>
+    rename("Manage licence" = 1)
+)
+```
+
+## FIDELIS network interest and expectations {#network-expectations}
+
+The FIDELIS network will be built within the FIDELIS project. This network of Trustworthy Digital Repositories (TDRs) will support the development and growth of TDRs within the EOSC ecosystem; foster harmonisation and interoperability across repositories to enable an EOSC federation of TDRs; and strengthen the upskilling of repositories and expand the network through an active training and support programme. These final questions cover your initial thoughts and expectations on the network so it can be shaped to support the needs of the community.
+
+***What do you see as the most important benefit(s) this network should provide to you or your organisation?**  
+```{r network benefits, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "What do you see as the most important benefit(s) this network should provide to you or your organisation?"
+    ) |>
+    drop_na() |>
+    rename("Benefit" = 1)
+)
+```
+
+**What potential barriers could limit your participation in the network?**  
+```{r network barriers, echo=FALSE}
+network_barriers <-
+  fidelis |>
+  select("What potential barriers could limit your participation in the network?") |>
+  drop_na() |>
+  rename("Barrier" = 1)
+
+responses <- nrow(network_barriers)
+
+network_barriers <-
+  network_barriers |>
+  separate_wider_delim(Barrier, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Barrier")) |>
+  select(value) |>
+  rename(Barrier = value) |>
+  count(Barrier) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+network_barriers |>
+  ggplot(aes(fct_reorder(Barrier, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 95))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...190") |>
+        rename("Other mechninisms" = "Other, namely:...190") |>
+        drop_na())
+```
+
+The FIDELIS network may offer mechanisms to facilitate collaboration and harmonisation on different topics (e.g. working groups).
+
+**What topics would you be interested in joining a collaborative effort on?**  
+```{r network topics, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "The FIDELIS network may offer mechanisms to facilitate collaboration and harmonisation on different topics (e.g. working groups). What topics would you be interested in joining a collaborative effort on?"
+    ) |>
+    rename("Topic" = 1) |>
+    drop_na()
+)
+```
+
+**What format of collaborative mechanisms would you be most likely to join?**  
+Select all applicable.
+```{r network collaboration, echo=FALSE}
+network_collaboration <-
+  fidelis |>
+  select("What format of collaborative mechanisms would you be most likely to join? Select all applicable.") |>
+  drop_na() |>
+  rename("Mechinism" = 1)
+
+responses <- nrow(network_collaboration)
+
+network_collaboration <-
+  network_collaboration |>
+  separate_wider_delim(Mechinism, "; ", names_sep = "", too_few = "align_start") |>
+  pivot_longer(cols = starts_with("Mechinism")) |>
+  select(value) |>
+  rename(Mechinism = value) |>
+  count(Mechinism) |>
+  drop_na() |>
+  arrange(desc(n))
+
+# Visualisation
+network_collaboration |>
+  ggplot(aes(fct_reorder(Mechinism, n), n)) +
+  geom_col(fill = "#FBB03B") +
+  coord_flip() +
+  geom_text(
+    aes(label = n),
+    family = "Calibri",
+    colour = "#75787B",
+    hjust = -.5
+  ) +
+  labs(
+    x = NULL,
+    y = NULL,
+    fill = "",
+    caption = paste0("n =", responses, ", respondents could select all applicable options.")
+  ) +
+  scale_x_discrete(labels = label_wrap(40)) +
+  theme_fidelis() +
+  theme(
+    legend.position = "none",
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    axis.text.x = element_blank(),
+    text = element_text(size = 12)
+  ) +
+  ylim(c(0, 120))
+
+# Other responses
+kable(fidelis |>
+        select("Other, namely:...193") |>
+        rename("Other mechninisms" = "Other, namely:...193") |>
+        drop_na())
+```
+
+**What are your expectations from such collaboration mechanisms, and what expertise, resources, or insights could you contribute?**
+```{r network expectations, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "What are your expectations from such collaboration mechanisms, and what expertise, resources, or insights could you contribute?"
+    ) |>
+    rename("Expectations" = 1) |>
+    drop_na()
+)
+```
+
+**In what other ways should the network help you address challenges?**
+```{r network ways, echo=FALSE}
+kable(
+  fidelis |>
+    select("In what other ways should the network help you address challenges?") |>
+    rename("Other ways to help" = 1) |>
+    drop_na()
+)
+```
+
+## Closing question {#closing-question}
+**Do you have any comments or feedback related to the FIDELIS network that you weren’t able to express elsewhere in the survey?**
+```{r closing comments, echo=FALSE}
+kable(
+  fidelis |>
+    select(
+      "Do you have any comments or feedback related to the FIDELIS network that you weren’t able to express elsewhere in the survey?"
+    ) |>
+    rename("Other comments" = 1) |>
+    drop_na()
+)
+```
+
+# Visualisations
+**Training topics**
+```{r training topics visualisations, echo=FALSE}
+#**Which of these topics have you previously received training or support on?**
+a <-
+  training_topics_recived |>
+  rename(Received = n)
+
+#***Which of these topics would you be interested in receiving (more) training or support on?**
+b <-
+  training_topics |>
+  rename(Interested = n)
+
+#bind
+c <- merge(a, b, by = "Topic")
+
+c <-
+  c |>
+  mutate(Gap = Interested - Received) |>
+  mutate(
+    Topic = recode(
+      Topic,
+      "Developing and sustaining the repository service" = "Develop/sustain repository",
+      "Stakeholder engagement and communication" = "Engagement/communication",
+      "FAIR-enabling qualities (how to make and keep digital objects in your repository FAIR)" = "FAIR-enabling",
+      "Technical infrastructure and repository software" =  "Infrastructure and software"
+    )
+  )
+
+d <-
+  a |>
+  rename(n = "Received") |>
+  mutate(Training = "Received")
+e <- b |>
+  rename(n = "Interested") |>
+  mutate(Training = "Interested")
+
+f <-
+  rbind(d, e)
+
+f <-
+  f |>
+  mutate(
+    Topic = recode(
+      Topic,
+      "Developing and sustaining the repository service" = "Develop/sustain repository",
+      "Stakeholder engagement and communication" = "Engagement/communication",
+      "FAIR-enabling qualities (how to make and keep digital objects in your repository FAIR)" = "FAIR-enabling",
+      "Technical infrastructure and repository software" =  "Infrastructure and software"
+    )
+  )
+
+
+# group bar chart
+ggplot(f, aes(fill = Training, y = Topic, x = n)) +
+  geom_bar(position = 'dodge', stat = 'identity') +
+  xlab("Responses") +
+  ylab("") +
+  scale_fill_manual(values = fidelis_colours) +
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    text = element_text(size = 12)
+  )
+
+rm(a, b, c, e, f)
+```
+```{r training formats visualisations, echo=FALSE}
+#**Which format(s) of training or support have you previously experienced?**
+a <-
+  training_format |>
+  rename(Received = n)
+
+#***Which format(s) of training or support would you like to receive?**
+b <-
+  training_support |>
+  rename(Interested = n)
+
+c <-
+  a |>
+  rename(n = "Received") |>
+  mutate(Interest = "Received")
+d <- b |>
+  rename(n = "Interested") |>
+  mutate(Interest = "Interested")
+
+e <-
+  rbind(c, d)
+
+f <-
+  e |>
+  mutate(
+    Format = recode(
+      Format,
+      "Seminars/webinars (i.e. listening to information being provided)" = "Seminars/Webinars",
+      "Peer support (i.e. from direct colleagues or other repositories)" = "Peer support",
+      "(online) workshops (i.e. some level of interactivity in a seminar/webinar)" = "Interactive workshops",
+      "Dedicated time for independent work on a topic" = "Dedicated time",
+      "Hands-on working sessions (e.g. hackathons)" = "Hands on",
+      "Open hours (i.e. possibility to drop in and ask any questions you have)" = "Open hours"
+    )
+  )
+
+# group bar chart
+ggplot(f, aes(fill = Interest, y = Format, x = n)) +
+  geom_bar(position = 'dodge', stat = 'identity') +
+  xlab("Responses") +
+  ylab("") +
+  scale_fill_manual(values = fidelis_colours) +
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    text = element_text(size = 12)
+  )
+
+rm(a, b, c, e, f)
+```
+```{r characteristics levels by repository type, echo = FALSE}
+as_deposited_type <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : As deposited - Digital object content and supporting metadata are distributed to users exactly as they are provided by depositors.",
+         "Is your repository domain-specific or generalist?") |>
+  rename("Provision" = 1,
+         "Type" = 2) |>
+  group_by(Type) |>
+  count(Provision) |>
+  mutate("Level" = "As deposited")
+
+deposit_compliance_type <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : Deposit compliance - Digital object content and supporting metadata deposited are checked for compliance with defined criteria, e.g. digital object formats, metadata elements, and compliance with legal and ethical norms.",
+         "Is your repository domain-specific or generalist?") |>
+  rename("Provision" = 1,
+         "Type" = 2) |>
+  group_by(Type) |>
+  count(Provision) |>
+  mutate("Level" = "Deposit compliance")
+
+inital_curation_type <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : Initial curation - The digital objects are curated by your repository to meet defined criteria, which may exceed those defined for Deposit Compliance.",
+         "Is your repository domain-specific or generalist?") |>
+  rename("Provision" = 1,
+         "Type" = 2) |>
+  group_by(Type) |>
+  count(Provision) |>
+  mutate("Level" = "Initial curation")
+
+active_preservation_type <- fidelis |>
+  select("What levels of retention, curation, and preservation does your repository provide? For each level, please indicate the status that most accurately fits the situation of your repository. : Active preservation - In addition to Deposit Compliance and Initial Curation, your repository takes long-term responsibility for ensuring that the digital objects and metadata can be understood and rendered as required by the designated community for reuse.",
+         "Is your repository domain-specific or generalist?") |>
+  rename("Provision" = 1,
+         "Type" = 2) |>
+  group_by(Type) |>
+  count(Provision) |>
+  mutate("Level" = "Active preservation")
+
+characteristics_levels_type <-
+  rbind(as_deposited_type,
+        deposit_compliance_type,
+        inital_curation_type,
+        active_preservation_type)
+
+rm(as_deposited_type,
+   deposit_compliance_type,
+   inital_curation_type,
+   active_preservation_type)
+
+# Set factors
+characteristics_levels_type$Level <-
+  factor(
+    characteristics_levels_type$Level,
+    levels = c(
+      "Active preservation",
+      "Initial curation",
+      "Deposit compliance",
+      "As deposited"
+    )
+  )
+
+characteristics_levels_type$Provision <- 
+  factor(
+    characteristics_levels_type$Provision,
+    levels = c(
+      "No",
+      "Unsure",
+      "Planned",
+      "In implementation",
+      "Implemented"
+      )
+  )
+
+# Visualisation
+characteristics_levels_type |>
+  ggplot(aes(x = Level, y = n, fill = Provision)) +
+  geom_col(position=position_dodge2(preserve="single"))+
+  facet_wrap(~Type) +
+  scale_color_manual(values = bar_chart_colours) +
+  scale_fill_manual(values = bar_chart_colours) +
+  xlab("") +
+  ylab("Number of responses") + 
+  theme_fidelis() +
+  theme(
+    axis.line = element_blank(),
+    axis.ticks = element_blank(),
+    panel.background = element_blank()
+  ) +
+  theme(legend.position = "bottom") +
+  guides(fill = guide_legend(nrow = 1, byrow = TRUE)) +
+  coord_flip()
+```
